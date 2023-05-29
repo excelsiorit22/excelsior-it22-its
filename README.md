@@ -24,6 +24,8 @@ This website for branding and identity Undergraduate Departement Information Tec
 
 * Tutorial pemakaian GIT: https://youtu.be/u0zqtYU-rJA
 
+* Desain website: https://www.figma.com/file/7E0zLcxRa1zWMKmmWmjOgp/Web-Excelsior-Design?type=design&node-id=0%3A1&t=ksKfRX5KSxoxg5KR-1
+
 * Pembagian tugas & urutan pengerjaan: 
 
   ![TUGAS!](/asset%20readme/tugas.png)
