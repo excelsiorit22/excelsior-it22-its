@@ -12,20 +12,155 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <title>About Excelsior</title>
 </head>
 
 <body>
-    <nav>
-        <!-- navbar -->
-    </nav>
+    <!-- Navbar -->
+    <section class="navbar">
+        <!--Desktop Logo dan Nama-->
+        <div class="header desktop-view">
+            <a href="#" class="name"><img class= "logo" src="../img/design assets/logo.svg">
+            Excelsior
+            </a>
+        </div>
+        <!--Mobile Logo dan Nama-->
+        <div class="mobile-view">
+            <a href="#" class="name"><img class= "logo" src="../img/design assets/logo.svg">
+                Excelsior
+            </a>
+        </div>
+        <!--Desktop Navbar-->
+        <nav>
+            <ul class="header desktop-view">
+            <li><a href="#" class="nav_list active">Home</a></li>
+            <li><a href="#" class="nav_list">About Us</a></li>
+            <li><a href="#" class="nav_list">Members</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile Navbar -->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+            <li><a href="#" class="nav_list">Home</a></li>
+            <li><a href="#" class="nav_list">About Us</a></li>
+            <li><a href="#" class="nav_list">Members</a></li>
+            </ul>
+        </div>
+    </section>
 
     <header>
         <!-- header & our story -->
+        <div>
+            <h1>ABOUT US</h1>
+        </div>
+        <div>
+            <div>
+                <h1>OUR STORY</h1>
+            </div>
+            <div>
+                <p>kami adalah sekumpulan mahasiswa Teknologi Informasi Angkatan 2022. Kami semua terdiri dari pejuang SNMPTN, SBMPTN, Mandiri, dan Kemitraan. Tanpa memandang suku, agama, dan ras, kami dipersatukan di departemen Teknologi Informasi. Senang dan susah kami lalui bersama.</p>
+            </div>
+        </div>
     </header>
 
     <section>
         <!-- our motto + visi & misi -->
+        <div>
+            <div>
+                <h1>OUR MOTTO</h1>
+            </div>
+            <div>
+                <span>Bound Together, Grow Together, Excelsior Forever</span>
+            </div>
+        </div>
+
+
+        <div>
+            <div>
+                <h2>VISI</h2>
+            </div>
+            <div>
+                <p>Mendorong semangat juang yang tinggi dalam berkolaborasi dan beradaptasi untuk mencapai tujuan yang lebih baik</p>
+            </div>
+        </div>
+
+
+        <div>
+            <div>
+                <h2>MISI</h2>
+            </div>
+            <div>
+                <ul>
+                    <li>Memperkuat kolaborasi dengan saling mendukung dan bertukar pengetahuan</li>
+                    <li>Menumbuhkan sikap adaptif dengan berpikir kreatif untuk terbuka terhadap perubahan dan perkembangan zaman</li>
+                    <li>Menjunjung sikap suportif, toleransi, dan saling memiliki</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- our logo -->
+        <div>
+            <h1>Our Logo</h1>
+        </div>
+        <div>
+            <!--Gambar Logo-->
+            <img>
+        </div>
+    </section>
+
+    <section>
+        <!-- philosophy -->
+        <div>
+            <h1>Philosophy</h1>
+        </div>
+        <div>
+            <div>
+                <!--Bagian 1, warna-->
+                <img>
+                <h3>WARNA UNGU</h3>
+                <p>Melambangkan kreativitas, kebijaksanaan, dan wawasan luas yang dimiliki departemen Teknologi Informasi 2022</p>
+
+                <img>
+                <h3>WARNA BIRU</h3>
+                <p>melambangkan kepercayaan, loyalitas, dan tanggung jawab yang menjadi pondasi Teknologi Informasi 2022</p>
+            </div>
+
+            <div>
+                <!--Bagian 2, sumbu-->
+                <img>
+                <h3>SUMBU DAN 3 HELAI API</h3>
+                <h4>(Mengimplementasikan Visi dan Misi)</h4>
+                <p>Sumbu dilambangkan sebagai visi yang memiliki pondasi dalam berkolaborasi dan beradaptasi. 3 helai api melambangkan 3 misi Teknologi Informasi 2022 (Excelsior) yang harus dilandasi dengan semangat juang bersama.</p>
+            </div>
+
+
+            <div>
+                <!--Bagian 3, huruf E-->
+                <img>
+                <h3>HURUF E</h3>
+                <h4>(Identitas Excelsior)</h4>
+                <p>Merepresentasikan sebuah identitas Excelsior yang berarti berjuang bersama untuk mencapai tujuan yang lebih baik.</p>
+            </div>
+
+            
+            <div>
+                <!--Bagian 4, infinity-->
+                <img>
+                <h3>INFINITY</h3>
+                <h4>(Suportif & Solid)</h4>
+                <p>Menggambarkan sebuah harapan Teknologi Informasi 2022 untuk terus supportif dan solid tiada henti dan tanpa batas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- our motto + visi & misi-->
     </section>
 
     <section>
@@ -116,7 +251,7 @@
     <footer>
         <!-- footer -->
     </footer>
-
+    <script src="../js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script>
