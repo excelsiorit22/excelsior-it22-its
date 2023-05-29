@@ -1,1 +1,0 @@
-Foto mahasiswa IT'22
