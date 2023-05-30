@@ -1,6 +1,6 @@
 # excelsior-it22-its
 This website for branding and identity Undergraduate Departement Information Technology 2022 ITS
-
+**JANGAN PUSH KE BRANCH MAIN, BUAT BRNACH SENDIRI ATAU PUSH KE BRANCH YG UDAH DISEDIAKAN
 **ATURAN PENGGUNAAN REPOSITORY EXCELSIOR**
 1. Jangan lupa lakukan git add . di terminal, pastikan semua perubahan sudah di add
 2. Pastikan git sudah meremote ke repo ini
