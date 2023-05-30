@@ -11,10 +11,6 @@ body {
     list-style: none;
 }
 
-h1, h2, h3, h4, p, li{
-    color: white;
-}
-
 :root {
     --white: #fff;
     --warna1: #2A2F4F;
