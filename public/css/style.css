@@ -10,3 +10,45 @@ body{
     height: 100vh;
     background: linear-gradient(#09051F, #C0CFFA);
 }
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 95px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content h2 {
+    font-size: 48px;
+    padding-left: 105px;
+    color: #17216F;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.content h1 {
+    padding-left: 105px;
+    font-size: 96px;
+    color: #17216f;
+    font-weight: 800;
+    line-height: 100px;
+}
+
+.content h3 {
+    padding-left: 111px;
+    font-size: 20px;
+    color: #17216f;
+    font-weight: 600;
+    line-height: 20px;
+}
