@@ -1,7 +1,9 @@
 # excelsior-it22-its
 This website for branding and identity Undergraduate Departement Information Technology 2022 ITS
+
 **JANGAN PUSH KE BRANCH MAIN, BUAT BRANCH SENDIRI ATAU PUSH KE BRANCH YG UDAH DISEDIAKAN**
 **ATURAN PENGGUNAAN REPOSITORY EXCELSIOR**
+
 1. Jangan lupa lakukan git add . di terminal, pastikan semua perubahan sudah di add
 2. Pastikan git sudah meremote ke repo ini
 3. Saat melakukan commit, pakai keterangan yang jelas agar yang lain bisa baca. Keterangan Commit diatur sebagai berikut agar semuanya sama dan paham
@@ -31,7 +33,7 @@ This website for branding and identity Undergraduate Departement Information Tec
   ![TUGAS!](/asset%20readme/tugas.png)
 
 **CATATAN PENTING TERKAIT JOBDESK**
-  - Bagi yang mempunyai tugas untuk mengetik beberapa section, diharap untuk tidak menambahkan class/id ke dalam tag html. Sebagai contoh, kalian hanya perlu menulis: <nav></nav> *BUKAN* <nav class="..."></nav> atau <nav id="..."></nav>
+  - Bagi yang mempunyai tugas untuk mengetik beberapa section, diharap untuk tidak menambahkan class/id ke dalam tag html.
   - Bagi yang mendapat tugas styling, harap diperhatikan bahwa desain di Figma tidak sepenuhnya akurat apabila "dikonversi" menjadi kode. Kalian dapat menyesuaikan sendiri agar enak dipandang, karena apabila menggunakan ukuran dari Figma, terkadang hasilnya terlalu besar ataupun terlalu kecil.
   - Bagi yang mendapat tugas styling, kalian dapat menggunakan fitur inspect di Figma untuk mengambil beberapa baris kode yang diperlukan agar pekerjaan kalian bisa selesai lebih cepat.
 

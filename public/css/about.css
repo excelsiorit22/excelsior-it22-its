@@ -22,6 +22,10 @@ body {
     --warnaBGAct: #C0CFFA;
 }
 
+body {
+    background: linear-gradient(#09051F, #C0CFFA);
+}
+
 #demo {
     width: 100%;
     height: 100%;
