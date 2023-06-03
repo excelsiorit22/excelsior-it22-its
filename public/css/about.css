@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 *,
 html,
 body {
@@ -510,4 +513,234 @@ swiper-slide img {
     .swiper-button-next {
         display: none;
     }
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .wrapHead {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* background-color: #09051F; */
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    /* opacity: .1; */
+}
+
+.aboutUs {
+    background-image: url("../img/designAssets/png/Header_Photo.png");
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapHead .aboutUs h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 160px;
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+    color: var(--white);
+}
+
+.unguUngu {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    bottom: 0;
+    background-color: #a62792;
+    opacity: 60%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 150px;
+}
+
+.container .ourstory {
+    display: flex;
+    align-items: center;
+    color: var(--warnaLinear1);
+    font-size: 40px
+}
+
+.container .ourstory h1{
+    font-weight: 600;
+}
+
+.container .ourstory h1 i{
+    font-weight: 300;
+}
+
+.ourstory-italic {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 8px;
+    line-height: 73px;
+    color: #000000;
+    padding-top: 87px;
+    padding-right: 20px;
+}
+
+.bawahnyaourstory {
+    background: rgba(0, 20, 149, 0.6);
+    color: var(--white);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.07);
+}
+
+.bawahnyaourstory p{
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+#motto {
+    width: 100%;
+    height: 100%;
+}
+
+#motto .container{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.line2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    color: #000000;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bound {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.kotak1, .kotak3 {
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    color: var(--white);
+    justify-content: center;
+}
+
+.tengah {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    /* background-color: #09051F; */
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.contain {
+    position: relative;
+    width: 1098px;
+    height: 165px;
+}
+
+.kotak1 {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 283px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #2a2f4f;
+    outline: 3px solid #ffffff;
+    z-index: 2;
+}
+
+.kotak2 .kotak1 span {
+    font-size: 60px;
+}
+
+.kotak2 {
+    width: 100%;
+    height: 100%;
+    background-color: #6672bf;
+    padding: 50px;
+    border-radius: 108px 0 108px 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.kotak2 span {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--white);
+}
+
+.kotak4 {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    margin-top: 100px;
+    background-color: #6672bf;
+    border-radius: 108px 0 108px 0;
+    z-index: 1;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.kotak4 ol {
+    /* background-color: #2A2F4F; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 20px 60px 60px;
+}
+
+.kotak4 ol li {
+    list-style: outside;
+    font-size: 20px;
+}
+
+.kotak3 {
+    position: absolute;
+    top: -50px;
+    width: 283px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #2a2f4f;
+    outline: 3px solid #ffffff;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
