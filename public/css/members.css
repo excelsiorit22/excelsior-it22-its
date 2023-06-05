@@ -10,6 +10,11 @@ body {
     background: linear-gradient(#09051F, #C0CFFA);
 }
 
+#member {
+    width: 100%;
+    height: 100%;
+}
+
 #member .member {
     width: 100%;
     text-align: center;
@@ -25,13 +30,6 @@ body {
     font-size: 8vh;
 }
 
-#member .member .container,
-#member .member .container_duo {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    padding: 3% 11% 3% 11%;
-}
 
 .cardb,
 .cardw,
@@ -113,13 +111,13 @@ body {
     font-size: 8vh;
 }
 
-.container,
-.container_duo {
+#member .member .container {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    padding: 25px 150px 10px 150px;
-    /* padding: 3% 11% 3% 11%; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 60px;
 }
 
 .cardb,
@@ -127,6 +125,7 @@ body {
 .cardt {
     height: 420px;
     width: 300px;
+    margin-top: 2rem;
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 #090216;
 }
