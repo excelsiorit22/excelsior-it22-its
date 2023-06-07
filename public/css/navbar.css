@@ -20,9 +20,8 @@ body {
 .navbar {
   padding: 0 20px;
   background-color: #2a2f4f;
-  height: 4.5rem;
+  height: 5rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -45,13 +44,12 @@ ul a {
 ul li {
   display: flex;
   padding: 30px;
-  align-items: center;
   margin-left: 10px;
 }
 
 /* DESKTOP VIEW */
 .desktop-view .name{
-  display: flex;
+  display: inline-flex;
   align-items: center;
   column-gap: 0.22rem;
   padding: 21px;
