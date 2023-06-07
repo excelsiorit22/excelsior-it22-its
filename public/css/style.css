@@ -12,21 +12,22 @@ body {
 }
 
 .image-container {
-    position: relative;
     width: 100%;
 }
 
 .image-container img {
     display: block;
+    margin-top: 4rem;
     width: 100%;
 }
 
 .content {
+    margin-top: 4rem;
     position: absolute;
     display: flex;
     flex-direction: column;
     padding-left: 7em;
-    top: 95px;
+    top: 100px;
     font-family: 'Montserrat', sans-serif;
 }
 
