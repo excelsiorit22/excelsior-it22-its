@@ -25,11 +25,57 @@ body {
   --warnaBGAct: #c0cffa;
 }
 
-body {
+/* body {
   background: linear-gradient(#09051f, #c0cffa);
-}
+} */
 
 /* philosophy */
+
+#philo {
+  width: 100%;
+  height: 100%;
+  background-color: #1f145d;
+  position: relative;
+}
+
+#philo .setLogo{
+  width: 100%;
+  height: 100%;
+  padding: 60px 0 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#philo .setLogo h1{
+  font-size: 96px;
+  color: var(--white);
+  margin-bottom: 60px;
+}
+
+#philo .exc,
+#philo .sior,
+#philo .akses{
+  position: absolute;
+}
+
+#philo .exc {
+  right: 0;
+}
+
+#philo .sior {
+  left: 0;
+  top: 400px;
+}
+
+#philo .akses {
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  top: 700px;
+}
 
 .philosophy-title > h1 {
   font-family: "Montserrat", sans-serif;
@@ -44,14 +90,28 @@ body {
 .Philosophy {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 150px;
+  padding-bottom: 100px;
+  position: relative;
 }
+
+.Philosophy .image {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.Philosophy .image img{
+  width: 100%;
+  height: 100%;
+}
+
 .color-card,
 .main-card1,
 .main-card2,
 .main-card3 {
   width: 310px;
   height: 550px;
+  z-index: 3;
   background-color: #c0cffa;
   text-align: center;
   border-radius: 45px;
@@ -71,7 +131,7 @@ body {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
 }
