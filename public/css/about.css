@@ -29,6 +29,28 @@ body {
   background: linear-gradient(#09051f, #c0cffa);
 }
 
+/* Our Logo */
+
+.logo-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  text-align: center;
+  color: #f2f2f2;
+  padding-bottom: 40px;
+  padding-top: 25px;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 150px;
+}
+
 /* philosophy */
 
 .philosophy-title > h1 {
