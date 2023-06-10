@@ -170,9 +170,16 @@ body {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 30px;
   text-align: center;
+}
+
+.colour-header-gap > p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 0 30px;
 }
 
 .color-card > * {
@@ -185,7 +192,7 @@ body {
 
 .main-colour-gap {
   display: flex;
-  gap: 35px;
+  gap: 25px;
   align-items: center;
   flex-direction: column;
   padding-top: 20px;
@@ -193,14 +200,14 @@ body {
 
 .colour-header-desc-gap {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
   flex-direction: column;
 }
 
 .colour-header-gap {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
   flex-direction: column;
 }
@@ -235,6 +242,22 @@ body {
   color: #000000;
 }
 
+.main-card2 > .big-logo-header-exp {
+  gap: 40px;
+}
+
+.main-card3 > .big-logo-header-exp {
+  gap: 40px;
+}
+
+.main-card2  > .big-logo-header-exp > .mini-logo-header-exp {
+  gap: 40px;
+}
+
+.main-card3 > .big-logo-header-exp > .mini-logo-header-exp {
+  gap: 40px;
+}
+
 .big-logo-header-exp {
   display: flex;
   gap: 25px;
@@ -253,15 +276,19 @@ body {
   padding: 0px 30px;
 }
 
+.main-card1 > .big-logo-header-exp {
+  gap: 15px;
+}
+
 .main-card1 > .big-logo-header-exp > p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 24px;
   text-align: center;
   color: #000000;
-  padding: 0px;
+  padding: 0px 30px;
 }
 
 .header-exp {
