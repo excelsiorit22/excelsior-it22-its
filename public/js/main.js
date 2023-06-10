@@ -17,9 +17,9 @@ function toggleMobileMenu(menu) {
 //     // stars2.style.left = value * 0.1 + 'px';
 // })
 
-// // TYPE BAGIAN HOMEPAGE
-// let typed = new Typed('#element', {
-//     strings: ['Excelsior', "Angkatan '22"],
-//     typeSpeed: 120,
-//     loop: true
-// });
+// TYPE BAGIAN HOMEPAGE
+let typed = new Typed('#element', {
+    strings: ['Excelsior', "Angkatan '22"],
+    typeSpeed: 120,
+    loop: true
+});
