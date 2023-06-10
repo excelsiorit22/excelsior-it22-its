@@ -4,8 +4,8 @@ function toggleMobileMenu(menu) {
 }
 
 // A SKY FULL OF STARS
-const stars = document.getElementById('stars');
-const stars1 = document.getElementById('stars1');
+// const stars = document.getElementById('stars');
+// const stars1 = document.getElementById('stars1');
 // let stars2 = document.getElementById('stars2');
 // let stars3 = document.getElementById('stars3');
 
