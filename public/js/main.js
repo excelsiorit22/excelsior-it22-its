@@ -9,3 +9,11 @@ let typed = new Typed('#element', {
     typeSpeed: 120,
     loop: true
 });
+
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
