@@ -1,517 +1,2176 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/members.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/members.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
     <title>Excelsior Profile Card</title>
-</head>
+  </head>
 
-<body>
-    <section class="home">
-
-    </section>
+  <body>
+    <section class="home"></section>
     <!-- Navbar -->
     <section class="navbar">
-        <!--Desktop Logo dan Nama-->
-        <div class="header desktop-view">
-            <a href="#" class="name"><img class="logo" src="../img/designAssets/svg/logo.svg">
-                Excelsior
-            </a>
-        </div>
-        <!--Mobile Logo dan Nama-->
-        <div class="mobile-view">
-            <a href="#" class="name"><img class="logo" src="../img/designAssets/svg/logo.svg">
-                Excelsior
-            </a>
-        </div>
-        <!--Desktop Navbar-->
-        <nav>
-            <ul class="header desktop-view">
-                <li><a href="/" class="nav_list">Home</a></li>
-                <li><a href="/public/pages/about.html" class="nav_list">About Us</a></li>
-                <li><a href="/public/pages/members.html" class="nav_list active">Members</a></li>
-            </ul>
-        </nav>
-        <!-- Mobile Navbar -->
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="/" class="nav_list">Home</a></li>
-                <li><a href="/public/pages/about.html" class="nav_list">About Us</a></li>
-                <li><a href="/public/pages/members.html" class="nav_list active">Members</a></li>
-            </ul>
-        </div>
+      <!--Desktop Logo dan Nama-->
+      <div class="header desktop-view">
+        <a href="#" class="name"
+          ><img class="logo" src="../img/designAssets/svg/logo.svg" />
+          Excelsior
+        </a>
+      </div>
+      <!--Mobile Logo dan Nama-->
+      <div class="mobile-view">
+        <a href="#" class="name"
+          ><img class="logo" src="../img/designAssets/svg/logo.svg" />
+          Excelsior
+        </a>
+      </div>
+      <!--Desktop Navbar-->
+      <nav>
+        <ul class="header desktop-view">
+          <li><a href="/" class="nav_list">Home</a></li>
+          <li>
+            <a href="/public/pages/about.html" class="nav_list">About Us</a>
+          </li>
+          <li>
+            <a href="/public/pages/members.html" class="nav_list active"
+              >Members</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile Navbar -->
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/" class="nav_list">Home</a></li>
+          <li>
+            <a href="/public/pages/about.html" class="nav_list">About Us</a>
+          </li>
+          <li>
+            <a href="/public/pages/members.html" class="nav_list active"
+              >Members</a
+            >
+          </li>
+        </ul>
+      </div>
     </section>
 
+    <!-- BACA SEBELUM ISI DATA -->
+    <!-- 1. CTRL+F UNTUK CARI KATA container, AGAR MEMUDAHKAN MENGETAHUI POSISI NRPnya  -->
+    <!-- 2. TEKAN TOMBOL NEXT MATCH (PANAH KE BAWAH) DI KOLOM SEARCH POJOK KANAN ATAS DAN TEMUKAN NRP YG MAU KAMU ISI -->
+    <!-- 3. JIKA BAGIANMU SUDAH TERISI, MAKA LAPORKAN KE GRUP JIKA MAU PUSH KE GITHUB (MENCEGAH TABRAKAN), JIKA GRUP ACC, SILAHKAN PUSH -->
     <section id="member">
-        <div class="member">
-            <!-- nrp 1 - 4 -->
-            <div class="container">
-                <div class="cardb">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardw">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardb">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardw">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+      <div class="member">
+        <!-- nrp 1 - 4 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img
+                src="http://drive.google.com/uc?export=view&id=1wYquvOKTohMGZIKw2-_mGwTj52NEt9oK"
+                alt=""
+                onclick="openPopup()"
+              />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
             </div>
-
-            <!-- nrp 5 - 8 -->
-            <div class="container">
-                <div class="cardw">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div class="popup" id="popup" onclick="closePopup()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src="http://drive.google.com/uc?export=view&id=1wYquvOKTohMGZIKw2-_mGwTj52NEt9oK"
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
                 </div>
-                <div class="cardb">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardw">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardb">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-
-            <!-- 17 - 20 -->
-            <div class="container">
-                <div class="cardb">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardw">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardb">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardw">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+              </div>
             </div>
-
-            <!-- 28 - 32 -->
-            <div class="container">
-                <div class="cardw">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardb">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardw">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="cardb">
-                    <div class="card">
-                        <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="" onclick="openPopup()">
-                        <div class="cardtxt">
-                            <p>Dwiyasa Nakula </p>
-                        </div>
-                    </div>
-                    <div class="popup" id="popup" onclick="closePopup()">
-                        <div class="popup-content">
-                          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                          <img src="http://drive.google.com/uc?export=view&id=1gCofAQ3Dxn48EvmyjAyrx74PTrriQltT" alt="Foto Profil" style="width: 100%; height: auto;">
-                          <div class="description">
-                            <h2 class="pop-name">Dwiyasa Nakula</h2>
-                            <div class="card-content">
-                              <p>NRP: 5027221001</p>
-                              <p>Tanggal Lahir: 12/6/2004</p>
-                              <p>Asal : Sidoarjo, Jawa Timur </p>
-                              <p>IG : @dwiyasa_nakula</p>
-                              <p>MBTI : INFJ-A</p>
-                              <p>HOBI : Baca</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup1()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
             </div>
-            
-            <!-- 33 - 36 -->
-            <div class="container">
-                <!-- <div class="cardt"><!-- jangan ganti yg ini, buat fill slot kosong -->
-                <!-- </div> -->
-                <div class="cardw">
-                    <div class="card">
-                        <img src="" alt="">
-                        <div class="cardtxt">
-                            <p>NAMA</p>
-                        </div>
-                    </div>
+            <div class="popup" id="popup1" onclick="closePopup1()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p></p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
                 </div>
-                <div class="cardb">
-                    <div class="card">
-                        <img src="" alt="">
-                        <div class="cardtxt">
-                            <p>NAMA</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="cardt"><!-- jangan ganti yg ini, buat fill slot kosong -->
-                <!-- </div> -->
+              </div>
             </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup2()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup2" onclick="closePopup2()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup3()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup3" onclick="closePopup3()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- nrp 5 - 8 -->
+        <div class="container">
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup4()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup4" onclick="closePopup4()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup5()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup5" onclick="closePopup5()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup6()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup6" onclick="closePopup6()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup7()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup7" onclick="closePopup7()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 9 - 12 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup8()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup8" onclick="closePopup8()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup9()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup9" onclick="closePopup9()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup10()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup10" onclick="closePopup10()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup11()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup11" onclick="closePopup11()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 13 - 16 -->
+        <div class="container">
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup12()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup12" onclick="closePopup12()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup13()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup13" onclick="closePopup13()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup14()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup14" onclick="closePopup14()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup15()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup15" onclick="closePopup15()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 17 - 20 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup16()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup16" onclick="closePopup16()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup17()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup17" onclick="closePopup17()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup18()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup18" onclick="closePopup18()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup19()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup19" onclick="closePopup19()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 21 - 24 -->
+        <div class="container">
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup20()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup20" onclick="closePopup20()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup21()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup21" onclick="closePopup21()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup22()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup22" onclick="closePopup22()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup23()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup23" onclick="closePopup23()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 25 - 28 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup24()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup24" onclick="closePopup24()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup25()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup25" onclick="closePopup25()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup26()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup26" onclick="closePopup26()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup27()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup27" onclick="closePopup27()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 29 - 32 -->
+        <div class="container">
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup28()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup28" onclick="closePopup28()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup29()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup29" onclick="closePopup29()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup30()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup30" onclick="closePopup30()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup31()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup31" onclick="closePopup31()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 33 - 36 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img
+                src="http://drive.google.com/uc?export=view&id=1gilqqzElduu6BHLsuWRsknmoQ6G7wsQL"
+                alt="ddfd"
+                onclick="openPopup32()"
+              />
+              <div class="cardtxt">
+                <p>Iki Adfi Nur Mohamad</p>
+              </div>
+            </div>
+            <div class="popup" id="popup32" onclick="closePopup32()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src="http://drive.google.com/uc?export=view&id=1gilqqzElduu6BHLsuWRsknmoQ6G7wsQL"
+                  alt="Foto Profil1"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Iki Adfi Nur Mohamad</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221033</p>
+                    <p>Tanggal Lahir: 20/6/2004</p>
+                    <p>Asal : Lumajang, Jawa Timur</p>
+                    <p>IG : @ini.adfi</p>
+                    <p>MBTI : ENFJ-T</p>
+                    <p>HOBI : Menatap masa depan asek</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img
+                src="http://drive.google.com/uc?export=view&id=1IpEV5Pffv8RbaRaQ3XfGlDNYYidx2K2o"
+                alt=""
+                onclick="openPopup33()"
+              />
+              <div class="cardtxt">
+                <p>Rahmad Aji Wicaksono</p>
+              </div>
+            </div>
+            <div class="popup" id="popup33" onclick="closePopup33()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src="http://drive.google.com/uc?export=view&id=1IpEV5Pffv8RbaRaQ3XfGlDNYYidx2K2o"
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221034</p>
+                    <p>Tanggal Lahir: 18/12/2004</p>
+                    <p>Asal : Surabaya, Jawa Timur</p>
+                    <p>IG : @rahmad_a.w</p>
+                    <p>MBTI : ESFP-T</p>
+                    <p>HOBI : Pc Gaming</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img
+                src="http://drive.google.com/uc?export=view&id=1y6uGOu-8PKZMudZRYcGCZRAOGln67zst"
+                alt=""
+                onclick="openPopup34()"
+              />
+              <div class="cardtxt">
+                <p>Azzahra Sekar R.</p>
+              </div>
+            </div>
+            <div class="popup" id="popup34" onclick="closePopup34()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src="http://drive.google.com/uc?export=view&id=1y6uGOu-8PKZMudZRYcGCZRAOGln67zst"
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Azzahra Sekar Rahmadina</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221035</p>
+                    <p>Tanggal Lahir: 11/5/2005</p>
+                    <p>Asal : Lamongan, Jawa Timur</p>
+                    <p>IG : @skr.zhra</p>
+                    <p>MBTI : ISFP-T</p>
+                    <p>HOBI : Baca Nopel, Nonton KPOP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img
+                src="http://drive.google.com/uc?export=view&id=1IxXONvovSfWjB6cRZTQTNs3PTgMN1X1X"
+                alt=""
+                onclick="openPopup35()"
+              />
+              <div class="cardtxt">
+                <p>Jacinta Syilloam</p>
+              </div>
+            </div>
+            <div class="popup" id="popup35" onclick="closePopup35()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src="http://drive.google.com/uc?export=view&id=1IxXONvovSfWjB6cRZTQTNs3PTgMN1X1X"
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Jacinta Syilloam</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221036</p>
+                    <p>Tanggal Lahir: 6/1/2004</p>
+                    <p>Asal : Surabaya, Jawa Timur</p>
+                    <p>IG : @jacintaleho</p>
+                    <p>MBTI : ISTP</p>
+                    <p>HOBI : cari uang</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 37 - 40 -->
+        <div class="container">
+          <div class="cardw">
+            <div class="card">
+              <img
+                src="http://drive.google.com/uc?export=view&id=1HMJMiErj2bOVJyvwnyGq4qry72JgHqQX"
+                alt=""
+                onclick="openPopup36()"
+              />
+              <div class="cardtxt">
+                <p>Michael Wayne</p>
+              </div>
+            </div>
+            <div class="popup" id="popup36" onclick="closePopup36()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src="http://drive.google.com/uc?export=view&id=1HMJMiErj2bOVJyvwnyGq4qry72JgHqQX"
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Michael Wayne</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221037</p>
+                    <p>Tanggal Lahir: 4/2/2003</p>
+                    <p>Asal : Surabaya, Jawa Timur</p>
+                    <p>IG : @mykit22</p>
+                    <p>MBTI : ESTP</p>
+                    <p>HOBI : kuliah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img
+                src="http://drive.google.com/uc?export=view&id=1lL71LgKdy-bwk3QefP4DAhQhAnVch6CY"
+                alt=""
+                onclick="openPopup37()"
+              />
+              <div class="cardtxt">
+                <p>Zulfa Hafizh Kusuma</p>
+              </div>
+            </div>
+            <div class="popup" id="popup37" onclick="closePopup37()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src="http://drive.google.com/uc?export=view&id=1lL71LgKdy-bwk3QefP4DAhQhAnVch6CY"
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Zulfa Hafizh Kusuma</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221038</p>
+                    <p>Tanggal Lahir: 27/6/2004</p>
+                    <p>Asal : Surabaya, Jawa Timur</p>
+                    <p>IG : @hafizhkusuma</p>
+                    <p>MBTI : INFP-A</p>
+                    <p>HOBI : ml (bocil)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img
+                src="http://drive.google.com/uc?export=view&id=1UEunCoWq8UaaV2Yotu9rL5Z_q9pMkbPG"
+                alt=""
+                onclick="openPopup38()"
+              />
+              <div class="cardtxt">
+                <p>M. Harvian Dito S.</p>
+              </div>
+            </div>
+            <div class="popup" id="popup38" onclick="closePopup38()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src="http://drive.google.com/uc?export=view&id=1UEunCoWq8UaaV2Yotu9rL5Z_q9pMkbPG"
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Muhammad Harvian Dito Syahputra</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221039</p>
+                    <p>Tanggal Lahir: 16/10/2003</p>
+                    <p>Asal : Probolinggo, Jawa Timur</p>
+                    <p>IG : @harviandt</p>
+                    <p>MBTI : INTJ-A</p>
+                    <p>HOBI : ketiduran</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img
+                src="http://drive.google.com/uc?export=view&id=1jnaeY1QqdqJKWswgXJBMnxU6pduJH5qa"
+                alt=""
+                onclick="openPopup39()"
+              />
+              <div class="cardtxt">
+                <p>Ilhan Ahmad Syafa</p>
+              </div>
+            </div>
+            <div class="popup" id="popup39" onclick="closePopup39()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src="http://drive.google.com/uc?export=view&id=1jnaeY1QqdqJKWswgXJBMnxU6pduJH5qa"
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Ilhan Ahmad Syafa</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221040</p>
+                    <p>Tanggal Lahir: 3/10/2003</p>
+                    <p>Asal : Surabaya, Jawa Timur</p>
+                    <p>IG : @ilhanahmads</p>
+                    <p>MBTI : ENFJ-A</p>
+                    <p>HOBI : olahraga</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 41 - 44 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup40()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup40" onclick="closePopup40()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup41()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup41" onclick="closePopup41()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup42()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup42" onclick="closePopup42()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup43()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup43" onclick="closePopup43()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 45 - 48 -->
+        <div class="container">
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup44()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup44" onclick="closePopup44()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup45()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup45" onclick="closePopup45()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup46()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup46" onclick="closePopup46()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup47()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup47" onclick="closePopup47()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 49 - 52 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup48()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup48" onclick="closePopup48()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup49()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup49" onclick="closePopup49()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup50()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup50" onclick="closePopup50()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup51()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup51" onclick="closePopup51()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 53 - 56 -->
+        <div class="container">
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup52()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup52" onclick="closePopup52()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup53()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup53" onclick="closePopup53()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup54()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup54" onclick="closePopup54()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup55()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup55" onclick="closePopup55()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 57 - 60 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup56()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup56" onclick="closePopup56()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup57()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup57" onclick="closePopup57()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup58()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup58" onclick="closePopup58()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup59()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup59" onclick="closePopup59()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 61 - 64 -->
+        <div class="container">
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup60()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup60" onclick="closePopup60()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup61()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup61" onclick="closePopup61()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup62()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup62" onclick="closePopup62()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup63()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup63" onclick="closePopup63()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- nrp 65 - 68 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup64()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup64" onclick="closePopup64()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup65()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup65" onclick="closePopup65()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardb">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup66()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup66" onclick="closePopup66()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cardw">
+            <div class="card">
+              <img src="" alt="" onclick="openPopup67()" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
+            </div>
+            <div class="popup" id="popup67" onclick="closePopup67()">
+              <div class="popup-content">
+                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+                <img
+                  src=""
+                  alt="Foto Profil"
+                  style="width: 100%; height: auto"
+                />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <div class="left">
-            <span>Follow us</span>
-            <div>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-tiktok"></i>
-            </div>
+      <div class="left">
+        <span>Follow us</span>
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-tiktok"></i>
         </div>
-        <div class="right">
-            <p>&copy; ITS Information Technology | Since 2021 | est. 2022</p>
-        </div>
+      </div>
+      <div class="right">
+        <p>&copy; ITS Information Technology | Since 2021 | est. 2022</p>
+      </div>
     </footer>
     <script src="../js/main.js"></script>
-</body>
-
+  </body>
 </html>
