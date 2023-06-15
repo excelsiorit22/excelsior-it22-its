@@ -9,6 +9,16 @@
 body {
     height: 100vh;
     background: transparent;
+    overflow-x: hidden;
+}
+
+.owl-carousel {
+    /* background-color: #45a049; */
+    padding: 50px;
+}
+
+.owl-item {
+    padding: 0px 100px;
 }
 
 #bege {
