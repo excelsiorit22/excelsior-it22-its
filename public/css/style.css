@@ -154,8 +154,10 @@ body {
   margin-bottom: 30px;
 }
 
-button.btn-learn-more {
-  display: inline-block;
+a.btn-learn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30%;
   padding: 15px 20px;
   font-size: 20px;
@@ -168,7 +170,7 @@ button.btn-learn-more {
   transition: all 0.3s ease-in-out;
 }
 
-button.btn-learn-more:hover {
+a.btn-learn-more:hover {
   background-color: #fff;
   color: #0b1349;
   /* transform: scale(1.1); */
