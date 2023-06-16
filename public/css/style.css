@@ -442,6 +442,14 @@ a.btn-learn-more:hover {
 
 /* MEMBERS */
 
+#baruu {
+  width: 100%;
+  /* display: flex;
+  align-items: center; */
+  height: 100%;
+  overflow: hidden;
+}
+
 #memberss {
   padding-bottom: 50px;
   background: transparent;
