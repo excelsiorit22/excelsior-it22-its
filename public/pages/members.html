@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="../img/designAssets/svg/logo.svg">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -18,98 +19,92 @@
 </head>
 
 <body>
-  <section class="home"></section>
-  <!-- Navbar -->
-  <section class="navbar">
-    <!--Desktop Logo dan Nama-->
-    <div class="header desktop-view">
-      <a href="#" class="name"><img class="logo" src="../img/designAssets/svg/logo.svg" />
-        Excelsior
-      </a>
-    </div>
-    <!--Mobile Logo dan Nama-->
-    <div class="mobile-view">
-      <a href="#" class="name"><img class="logo" src="../img/designAssets/svg/logo.svg" />
-        Excelsior
-      </a>
-    </div>
-    <!--Desktop Navbar-->
-    <nav>
-      <ul class="header desktop-view">
-        <li><a href="/" class="nav_list">Home</a></li>
-        <li>
-          <a href="/public/pages/about.html" class="nav_list">About Us</a>
-        </li>
-        <li>
-          <a href="/public/pages/members.html" class="nav_list active">Members</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Mobile Navbar -->
-    <div id="hamburger-icon" enu(thi>
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-      <ul class="mobile-menu">
-        <li><a href="/" class="nav_list">Home</a></li>
-        <li>
-          <a href="/public/pages/about.html" class="nav_list">About Us</a>
-        </li>
-        <li>
-          <a href="/public/pages/members.html" class="nav_list active">Members</a>
-        </li>
-      </ul>
-    </div>
+  <section class="home">
+    <!-- Navbar -->
+    <section class="navbar">
+      <!--Desktop Logo dan Nama-->
+      <div class="header desktop-view">
+          <a href="#" class="name"><img class="logo" src="../img/designAssets/svg/logo.svg">
+              Excelsior
+          </a>
+      </div>
+
+      <!--Mobile Logo dan Nama-->
+      <div class="mobile-view">
+          <a href="#" class="name"><img class="logo" src="../img/designAssets/svg/logo.svg">
+              Excelsior
+          </a>
+      </div>
+
+      <!--Desktop Navbar-->
+      <nav>
+          <ul class="header desktop-view">
+              <li><a href="/" class="nav_list">Home</a></li>
+              <li><a href="/public/pages/about.html" class="nav_list">About Us</a></li>
+              <li><a href="/public/pages/members.html" class="nav_list active">Members</a></li>
+          </ul>
+      </nav>
+      <!-- Mobile Navbar -->
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+              <li><a href="/" class="nav_list">Home</a></li>
+              <li><a href="/public/pages/about.html" class="nav_list">About Us</a></li>
+              <li><a href="/public/pages/members.html" class="nav_list">Members</a></li>
+          </ul>
+      </div>
   </section>
 
-  <!-- BACA SEBELUM ISI DATA -->
-  <!-- 1. CTRL+F UNTUK CARI KATA container, AGAR MEMUDAHKAN MENGETAHUI POSISI NRPnya  -->
-  <!-- 2. TEKAN TOMBOL NEXT MATCH (PANAH KE BAWAH) DI KOLOM SEARCH POJOK KANAN ATAS DAN TEMUKAN NRP YG MAU KAMU ISI -->
-  <!-- 3. JIKA BAGIANMU SUDAH TERISI, MAKA LAPORKAN KE GRUP JIKA MAU PUSH KE GITHUB (MENCEGAH TABRAKAN), JIKA GRUP ACC, SILAHKAN PUSH -->
-  <section id="member">
-    <div class="member">
-      <!-- nrp 1 - 4 -->
-      <div class="container">
-        <div class="cardb">
-          <div class="card">
-            <img src="http://drive.google.com/uc?export=view&id=1wYquvOKTohMGZIKw2-_mGwTj52NEt9oK" alt="" />
-            <div class="cardtxt">
-              <p>Dwiyasa Nakula</p>
+    <!-- BACA SEBELUM ISI DATA -->
+    <!-- 1. CTRL+F UNTUK CARI KATA container, AGAR MEMUDAHKAN MENGETAHUI POSISI NRPnya  -->
+    <!-- 2. TEKAN TOMBOL NEXT MATCH (PANAH KE BAWAH) DI KOLOM SEARCH POJOK KANAN ATAS DAN TEMUKAN NRP YG MAU KAMU ISI -->
+    <!-- 3. JIKA BAGIANMU SUDAH TERISI, MAKA LAPORKAN KE GRUP JIKA MAU PUSH KE GITHUB (MENCEGAH TABRAKAN), JIKA GRUP ACC, SILAHKAN PUSH -->
+    <section id="member">
+      <div class="member">
+        <h1>Our Members</h1>
+        <!-- nrp 1 - 4 -->
+        <div class="container">
+          <div class="cardb">
+            <div class="card">
+              <img src="http://drive.google.com/uc?export=view&id=1wYquvOKTohMGZIKw2-_mGwTj52NEt9oK" alt="" />
+              <div class="cardtxt">
+                <p>Dwiyasa Nakula</p>
+              </div>
             </div>
-          </div>
-          <div class="popup" id="popup">
-            <div class="popup-content">
-              <!-- <span class="close-button" >&times;</span> -->
-              <img src="http://drive.google.com/uc?export=view&id=1wYquvOKTohMGZIKw2-_mGwTj52NEt9oK" alt="Foto Profil"
-                style="width: 100%; height: auto" />
-              <div class="description">
-                <h2 class="pop-name">Dwiyasa Nakula</h2>
-                <div class="card-content">
-                  <p>NRP: 5027221001</p>
-                  <p>Tanggal Lahir: 12/6/2004</p>
-                  <p>Asal : Sidoarjo, Jawa Timur</p>
-                  <p>IG : @dwiyasa_nakula</p>
-                  <p>MBTI : INFJ-A</p>
-                  <p>HOBI : Baca</p>
+            <div class="popup" id="popup">
+              <div class="popup-content">
+                <!-- <span class="close-button" >&times;</span> -->
+                <img src="http://drive.google.com/uc?export=view&id=1wYquvOKTohMGZIKw2-_mGwTj52NEt9oK" alt="Foto Profil"
+                  style="width: 100%;" />
+                <div class="description">
+                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <div class="card-content">
+                    <p>NRP: 5027221001</p>
+                    <p>Tanggal Lahir: 12/6/2004</p>
+                    <p>Asal : Sidoarjo, Jawa Timur</p>
+                    <p>IG : @dwiyasa_nakula</p>
+                    <p>MBTI : INFJ-A</p>
+                    <p>HOBI : Baca</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup1()" />
+              <img src="http://drive.google.com/uc?export=view&id=1yWU4a6FogJd0j6ms53AL4GsDUPZMe4we"
+                alt="Foto Profil" />
               <div class="cardtxt">
-                <p>Ong Valencio Jesse Purnomo</p>
+                <p>Ong Valencio Jesse P.</p>
               </div>
             </div>
             <div class="popup" id="popup1" onclick="closePopup1()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1yWU4a6FogJd0j6ms53AL4GsDUPZMe4we"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1yWU4a6FogJd0j6ms53AL4GsDUPZMe4we" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Ong Valencio Jesse Purnomo</h2>
                   <div class="card-content">
@@ -126,19 +121,17 @@
           </div>
           <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup2()" />
+              <img src="http://drive.google.com/uc?export=view&id=1TBMGgJIJlauzMHqH0rG7-YB3NKwe02Pq" alt="Foto Profil"
+                style="width: 100%; " />
               <div class="cardtxt">
-                <p>Mohammad Arkananta Radithya Taratugang</p>
+                <p>Mohammad Arkananta R.T.</p>
               </div>
             </div>
             <div class="popup" id="popup2" onclick="closePopup2()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1TBMGgJIJlauzMHqH0rG7-YB3NKwe02Pq"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1TBMGgJIJlauzMHqH0rG7-YB3NKwe02Pq" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Mohammad Arkananta Radithya Taratugang</h2>
                   <div class="card-content">
@@ -155,7 +148,8 @@
           </div>
           <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup3()" />
+              <img src="http://drive.google.com/uc?export=view&id=1rcPHwBbYFvzSlDswylMIPwRkHYygT0Zb" alt="Foto Profil"
+                style="width: 100%; " />
               <div class="cardtxt">
                 <p>Agas Ananta Wijaya</p>
               </div>
@@ -163,11 +157,8 @@
             <div class="popup" id="popup3" onclick="closePopup3()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1rcPHwBbYFvzSlDswylMIPwRkHYygT0Zb"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1rcPHwBbYFvzSlDswylMIPwRkHYygT0Zb" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Agas Ananta Wijaya</h2>
                   <div class="card-content">
@@ -178,18 +169,17 @@
                     <p>MBTI : ISTP-T</p>
                     <p>HOBI : Videography</p>
                   </div>
->>>>>>> 01bd7d83463e6728f9c948b5488ca04fbeed5a24
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- nrp 5 - 8 -->
-        <div class="container">
+          <!-- nrp 5-8 -->
           <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup4()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1136mYEzvb1Z3Po0vpT6mMadCdMys6DKF" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Bhisma Elki Pratama</p>
               </div>
@@ -197,11 +187,8 @@
             <div class="popup" id="popup4" onclick="closePopup4()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1136mYEzvb1Z3Po0vpT6mMadCdMys6DKF"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1136mYEzvb1Z3Po0vpT6mMadCdMys6DKF" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Bhisma Elki Pratama</h2>
                   <div class="card-content">
@@ -218,19 +205,17 @@
           </div>
           <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup5()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1g3gOAR6ncD8t0yQYUsR_TugCFxRO3U0c" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>M.Januar Eko Wicaksono</p>
               </div>
             </div>
             <div class="popup" id="popup5" onclick="closePopup5()">
               <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1g3gOAR6ncD8t0yQYUsR_TugCFxRO3U0c"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1g3gOAR6ncD8t0yQYUsR_TugCFxRO3U0c" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">M.Januar Eko Wicaksono</h2>
                   <div class="card-content">
@@ -247,23 +232,22 @@
           </div>
           <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup6()" />
+              <img src="http://drive.google.com/uc?export=view&id=1AIPuHXJ_Y3SUIgYtAlKmPe0PMIDlun39" alt="Foto Profil"
+                style="width: 100%;" />
+
               <div class="cardtxt">
-                <p>Jeany Aurellia Putri Dewati</p>
+                <p>Jeany Aurellia Putri D.</p>
               </div>
             </div>
             <div class="popup" id="popup6" onclick="closePopup6()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1AIPuHXJ_Y3SUIgYtAlKmPe0PMIDlun39"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1AIPuHXJ_Y3SUIgYtAlKmPe0PMIDlun39" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Jeany Aurellia Putri Dewati</h2>
                   <div class="card-content">
-                     <p>NRP: 5027221008</p>
+                    <p>NRP: 5027221008</p>
                     <p>Tanggal Lahir: 12/10/2003</p>
                     <p>Asal : Surabaya, Jawa Timur</p>
                     <p>IG : @jeany_aurellia</p>
@@ -274,12 +258,13 @@
               </div>
             </div>
           </div>
-          
-        <!-- nrp 9 - 12 -->
-        <div class="container">
+
+          <!-- nrp 9 - 12 -->
           <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup8()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1SP4gSPpOuyXJDipp--8MIeRyrkQ6oZil" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Asadel Naufaleo</p>
               </div>
@@ -287,11 +272,8 @@
             <div class="popup" id="popup8" onclick="closePopup8()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1SP4gSPpOuyXJDipp--8MIeRyrkQ6oZil"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1SP4gSPpOuyXJDipp--8MIeRyrkQ6oZil" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Asadel Naufaleo</h2>
                   <div class="card-content">
@@ -306,9 +288,11 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup9()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1LPNHrkprWWhsUlpx26EeabUbS2_WoOvg" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Mutiara Nurhaliza</p>
               </div>
@@ -316,11 +300,8 @@
             <div class="popup" id="popup9" onclick="closePopup9()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1LPNHrkprWWhsUlpx26EeabUbS2_WoOvg"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1LPNHrkprWWhsUlpx26EeabUbS2_WoOvg" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Mutiara Nurhaliza</h2>
                   <div class="card-content">
@@ -335,9 +316,11 @@
               </div>
             </div>
           </div>
-          <div class="cardb">
+          <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup10()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1UByFo68lYUNhc-LaiBMKYralcYJ_3K1s" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Monika Damelia Hutapea</p>
               </div>
@@ -345,11 +328,8 @@
             <div class="popup" id="popup10" onclick="closePopup10()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1UByFo68lYUNhc-LaiBMKYralcYJ_3K1s"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1UByFo68lYUNhc-LaiBMKYralcYJ_3K1s" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Monika Damelia Hutapea</h2>
                   <div class="card-content">
@@ -364,25 +344,24 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup11()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1NmhF-go7r1mbAU91WJAeQXXb4i-quBfF" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
-                <p>Marcelinus Alvinanda Chrisantya</p>
+                <p>Marcelinus Alvinanda C.</p>
               </div>
             </div>
             <div class="popup" id="popup11" onclick="closePopup11()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1NmhF-go7r1mbAU91WJAeQXXb4i-quBfF"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1NmhF-go7r1mbAU91WJAeQXXb4i-quBfF" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Marcelinus Alvinanda Chrisantya</h2>
                   <div class="card-content">
-                     <p>NRP: 5027221012</p>
+                    <p>NRP: 5027221012</p>
                     <p>Tanggal Lahir: 6/11/2003</p>
                     <p>Asal : Madiun, Jawa Timur</p>
                     <p>IG : @mreezx</p>
@@ -393,13 +372,13 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- nrp 13 - 16 -->
-        <div class="container">
+          <!-- nrp 13 - 16 -->
           <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup12()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1UZAmdpxdWy_v3zgT8uTRPzolZjlhSUSu" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Rizki Ramadhani</p>
               </div>
@@ -407,11 +386,8 @@
             <div class="popup" id="popup12" onclick="closePopup12()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1UZAmdpxdWy_v3zgT8uTRPzolZjlhSUSu"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1UZAmdpxdWy_v3zgT8uTRPzolZjlhSUSu" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Rizki Ramadhani</h2>
                   <div class="card-content">
@@ -426,9 +402,11 @@
               </div>
             </div>
           </div>
-          <div class="cardb">
+          <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup13()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1us1jmmJcF4MUgalC0Q3Ai5wigFA1JjNp" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Siti Nur Ellyzah</p>
               </div>
@@ -436,11 +414,8 @@
             <div class="popup" id="popup13" onclick="closePopup13()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1us1jmmJcF4MUgalC0Q3Ai5wigFA1JjNp"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1us1jmmJcF4MUgalC0Q3Ai5wigFA1JjNp" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Siti Nur Ellyzah</h2>
                   <div class="card-content">
@@ -455,9 +430,11 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup14()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=15DINnHQ8xzAmLFkR7nfmfCdOR0rShUL7" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Rehana Putri Salsabilla</p>
               </div>
@@ -465,11 +442,8 @@
             <div class="popup" id="popup14" onclick="closePopup14()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=15DINnHQ8xzAmLFkR7nfmfCdOR0rShUL7"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=15DINnHQ8xzAmLFkR7nfmfCdOR0rShUL7" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Rehana Putri Salsabilla</h2>
                   <div class="card-content">
@@ -484,9 +458,11 @@
               </div>
             </div>
           </div>
-          <div class="cardb">
+          <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup15()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1CCq6eTqbHQtBArobJG9UvP0q-yny8Sju" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Clara Valentina</p>
               </div>
@@ -494,11 +470,8 @@
             <div class="popup" id="popup15" onclick="closePopup15()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1CCq6eTqbHQtBArobJG9UvP0q-yny8Sju"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1CCq6eTqbHQtBArobJG9UvP0q-yny8Sju" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Clara Valentina</h2>
                   <div class="card-content">
@@ -513,13 +486,13 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- nrp 17 - 20 -->
-        <div class="container">
+          <!-- nrp 17 - 20 -->
           <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup16()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1Jmfcg6sf7rhqAV7j1FJha0sgRJROXf8k" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Etha Felisya Br Purba</p>
               </div>
@@ -527,11 +500,8 @@
             <div class="popup" id="popup16" onclick="closePopup16()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1Jmfcg6sf7rhqAV7j1FJha0sgRJROXf8k"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1Jmfcg6sf7rhqAV7j1FJha0sgRJROXf8k" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Etha Felisya Br Purba</h2>
                   <div class="card-content">
@@ -546,9 +516,11 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup17()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1xpqJOuEu85SewZAq_VbWMfuniTPclVv8" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Gabriella Erlinda Wijaya</p>
               </div>
@@ -556,11 +528,8 @@
             <div class="popup" id="popup17" onclick="closePopup17()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1xpqJOuEu85SewZAq_VbWMfuniTPclVv8"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1xpqJOuEu85SewZAq_VbWMfuniTPclVv8" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Gabriella Erlinda Wijaya</h2>
                   <div class="card-content">
@@ -575,9 +544,11 @@
               </div>
             </div>
           </div>
-          <div class="cardb">
+          <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup18()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=19eEb5CrO4fw8RrauJt37wLdssZC15sH2" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Sylvia Febrianti</p>
               </div>
@@ -585,11 +556,8 @@
             <div class="popup" id="popup18" onclick="closePopup18()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=19eEb5CrO4fw8RrauJt37wLdssZC15sH2"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=19eEb5CrO4fw8RrauJt37wLdssZC15sH2" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Sylvia Febrianti</h2>
                   <div class="card-content">
@@ -604,9 +572,11 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup19()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1f1cV71Uaw_Q1AVpVW3a5aSu3m77etyW6" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Wikri Cahya Syahrilla</p>
               </div>
@@ -614,15 +584,12 @@
             <div class="popup" id="popup19" onclick="closePopup19()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1f1cV71Uaw_Q1AVpVW3a5aSu3m77etyW6"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1f1cV71Uaw_Q1AVpVW3a5aSu3m77etyW6" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Wikri Cahya Syahrila</h2>
                   <div class="card-content">
-                     <p>NRP: 5027221020</p>
+                    <p>NRP: 5027221020</p>
                     <p>Tanggal Lahir: 10/28/2003</p>
                     <p>Asal : Madiun, Jawa Timur</p>
                     <p>IG : @wikri_cahya</p>
@@ -633,13 +600,13 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- nrp 21 - 24 -->
-        <div class="container">
+          <!-- nrp 21 - 24 -->
           <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup20()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1Lns-kZ9OLFGBay0qhV1N7PGjc1g9gVYW" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Steven Figo</p>
               </div>
@@ -647,11 +614,8 @@
             <div class="popup" id="popup20" onclick="closePopup20()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1Lns-kZ9OLFGBay0qhV1N7PGjc1g9gVYW"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1Lns-kZ9OLFGBay0qhV1N7PGjc1g9gVYW" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Steven Figo</h2>
                   <div class="card-content">
@@ -666,9 +630,11 @@
               </div>
             </div>
           </div>
-          <div class="cardb">
+          <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup21()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=16Eqvhz0KnJxmhbKUJRLJxt-qBiqtpm4I" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Bintang Ryan Wardana</p>
               </div>
@@ -676,11 +642,8 @@
             <div class="popup" id="popup21" onclick="closePopup21()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=16Eqvhz0KnJxmhbKUJRLJxt-qBiqtpm4I"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=16Eqvhz0KnJxmhbKUJRLJxt-qBiqtpm4I" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Bintang Ryan Wardana</h2>
                   <div class="card-content">
@@ -695,9 +658,11 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup22()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1XN-YewgydiqT9HMWRGgX4v8tHgwgBdQK" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Salsabila Amalia Harjanto</p>
               </div>
@@ -705,11 +670,8 @@
             <div class="popup" id="popup22" onclick="closePopup22()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1XN-YewgydiqT9HMWRGgX4v8tHgwgBdQK"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1XN-YewgydiqT9HMWRGgX4v8tHgwgBdQK" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Salsabila Amalia Harjanto</h2>
                   <div class="card-content">
@@ -724,9 +686,11 @@
               </div>
             </div>
           </div>
-          <div class="cardb">
+          <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup23()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=18HRF745FU9cnpR4Twu0t50qKORBVeVzV" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Wilson Matthew Thendry</p>
               </div>
@@ -734,11 +698,8 @@
             <div class="popup" id="popup23" onclick="closePopup23()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=18HRF745FU9cnpR4Twu0t50qKORBVeVzV"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=18HRF745FU9cnpR4Twu0t50qKORBVeVzV" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Wilson Matthew Thendry</h2>
                   <div class="card-content">
@@ -753,13 +714,13 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- nrp 25 - 28 -->
-        <div class="container">
+          <!-- nrp 25 - 28 -->
           <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup24()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1tejDouYD_vErXXGygebEtNARBjD9WIOc" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Fazrul Ahmad Fadhilah</p>
               </div>
@@ -767,11 +728,8 @@
             <div class="popup" id="popup24" onclick="closePopup24()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1tejDouYD_vErXXGygebEtNARBjD9WIOc"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1tejDouYD_vErXXGygebEtNARBjD9WIOc" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Fazrul Ahmad Fadhilah</h2>
                   <div class="card-content">
@@ -786,9 +744,11 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup25()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1_P7DXoJy99u30IRnMT8mQe1c2xAXJFXH" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Muhammad Faishal Rizqy</p>
               </div>
@@ -796,11 +756,8 @@
             <div class="popup" id="popup25" onclick="closePopup25()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1_P7DXoJy99u30IRnMT8mQe1c2xAXJFXH"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1_P7DXoJy99u30IRnMT8mQe1c2xAXJFXH" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Muhammad Faishal Rizqy</h2>
                   <div class="card-content">
@@ -815,9 +772,11 @@
               </div>
             </div>
           </div>
-          <div class="cardb">
+          <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup26()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1B88S3CKz5a8YiYAiOBr8KlKtHQgjlIpb" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Samuel Yuma Krismata</p>
               </div>
@@ -825,11 +784,8 @@
             <div class="popup" id="popup26" onclick="closePopup26()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1B88S3CKz5a8YiYAiOBr8KlKtHQgjlIpb"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1B88S3CKz5a8YiYAiOBr8KlKtHQgjlIpb" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Samuel Yuma Krismata</h2>
                   <div class="card-content">
@@ -844,9 +800,11 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup27()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=11E9z7CLpUw8uk9XOTQSC18POAiIoA35t" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Atha Rahma Arianti</p>
               </div>
@@ -854,11 +812,8 @@
             <div class="popup" id="popup27" onclick="closePopup27()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=11E9z7CLpUw8uk9XOTQSC18POAiIoA35t"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=11E9z7CLpUw8uk9XOTQSC18POAiIoA35t" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Atha Rahma Arianti</h2>
                   <div class="card-content">
@@ -873,13 +828,14 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- nrp 29 - 32 -->
-        <div class="container">
+          <!-- nrp 29 - 32 -->
+
           <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup28()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1EKDq8bn8bE4x4K8aiyDMpiB1o_R6oaMl" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Gavriel Pramuda Kurniaadi</p>
               </div>
@@ -887,11 +843,8 @@
             <div class="popup" id="popup28" onclick="closePopup28()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1EKDq8bn8bE4x4K8aiyDMpiB1o_R6oaMl"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1EKDq8bn8bE4x4K8aiyDMpiB1o_R6oaMl" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Gavriel Pramuda Kurniaadi</h2>
                   <div class="card-content">
@@ -906,9 +859,11 @@
               </div>
             </div>
           </div>
-          <div class="cardb">
+          <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup29()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1vWxB7nZ7BEnEBtEAU2TirmouhE5slapq" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Muhammad Afif</p>
               </div>
@@ -916,11 +871,8 @@
             <div class="popup" id="popup29" onclick="closePopup29()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1vWxB7nZ7BEnEBtEAU2TirmouhE5slapq"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1vWxB7nZ7BEnEBtEAU2TirmouhE5slapq" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Muhammad Afif</h2>
                   <div class="card-content">
@@ -936,15 +888,11 @@
             </div>
           </div>
 
-        <!-- nrp 33 - 36 -->
-        <div class="container">
+          <!-- nrp 33 - 36 -->
           <div class="cardb">
             <div class="card">
-              <img
-                src="http://drive.google.com/uc?export=view&id=1gilqqzElduu6BHLsuWRsknmoQ6G7wsQL"
-                alt="ddfd"
-                onclick="openPopup32()"
-              />
+              <img src="http://drive.google.com/uc?export=view&id=1gilqqzElduu6BHLsuWRsknmoQ6G7wsQL" alt="ddfd"
+                " />
               <div class="cardtxt">
                 <p>Iki Adfi Nur Mohamad</p>
               </div>
@@ -952,11 +900,8 @@
             <div class="popup" id="popup32" onclick="closePopup32()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1gilqqzElduu6BHLsuWRsknmoQ6G7wsQL"
-                  alt="Foto Profil1"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1gilqqzElduu6BHLsuWRsknmoQ6G7wsQL"
+                  alt="Foto Profil1" style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Iki Adfi Nur Mohamad</h2>
                   <div class="card-content">
@@ -973,11 +918,8 @@
           </div>
           <div class="cardw">
             <div class="card">
-              <img
-                src="http://drive.google.com/uc?export=view&id=1IpEV5Pffv8RbaRaQ3XfGlDNYYidx2K2o"
-                alt=""
-                onclick="openPopup33()"
-              />
+              <img src="http://drive.google.com/uc?export=view&id=1IpEV5Pffv8RbaRaQ3XfGlDNYYidx2K2o" alt=""
+                " />
               <div class="cardtxt">
                 <p>Rahmad Aji Wicaksono</p>
               </div>
@@ -985,11 +927,8 @@
             <div class="popup" id="popup33" onclick="closePopup33()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1IpEV5Pffv8RbaRaQ3XfGlDNYYidx2K2o"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1IpEV5Pffv8RbaRaQ3XfGlDNYYidx2K2o" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Rahmad Aji Wicaksono</h2>
                   <div class="card-content">
@@ -1006,11 +945,8 @@
           </div>
           <div class="cardb">
             <div class="card">
-              <img
-                src="http://drive.google.com/uc?export=view&id=1y6uGOu-8PKZMudZRYcGCZRAOGln67zst"
-                alt=""
-                onclick="openPopup34()"
-              />
+              <img src="http://drive.google.com/uc?export=view&id=1y6uGOu-8PKZMudZRYcGCZRAOGln67zst" alt=""
+                " />
               <div class="cardtxt">
                 <p>Azzahra Sekar R.</p>
               </div>
@@ -1018,11 +954,8 @@
             <div class="popup" id="popup34" onclick="closePopup34()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1y6uGOu-8PKZMudZRYcGCZRAOGln67zst"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1y6uGOu-8PKZMudZRYcGCZRAOGln67zst" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Azzahra Sekar Rahmadina</h2>
                   <div class="card-content">
@@ -1037,13 +970,10 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img
-                src="http://drive.google.com/uc?export=view&id=1IxXONvovSfWjB6cRZTQTNs3PTgMN1X1X"
-                alt=""
-                onclick="openPopup35()"
-              />
+              <img src="http://drive.google.com/uc?export=view&id=1IxXONvovSfWjB6cRZTQTNs3PTgMN1X1X" alt=""
+                " />
               <div class="cardtxt">
                 <p>Jacinta Syilloam</p>
               </div>
@@ -1051,11 +981,8 @@
             <div class="popup" id="popup35" onclick="closePopup35()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1IxXONvovSfWjB6cRZTQTNs3PTgMN1X1X"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1IxXONvovSfWjB6cRZTQTNs3PTgMN1X1X" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Jacinta Syilloam</h2>
                   <div class="card-content">
@@ -1070,17 +997,12 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- nrp 37 - 40 -->
-        <div class="container">
+          <!-- nrp 37 - 40 -->
           <div class="cardw">
             <div class="card">
-              <img
-                src="http://drive.google.com/uc?export=view&id=1HMJMiErj2bOVJyvwnyGq4qry72JgHqQX"
-                alt=""
-                onclick="openPopup36()"
-              />
+              <img src="http://drive.google.com/uc?export=view&id=1HMJMiErj2bOVJyvwnyGq4qry72JgHqQX" alt=""
+                " />
               <div class="cardtxt">
                 <p>Michael Wayne</p>
               </div>
@@ -1088,11 +1010,8 @@
             <div class="popup" id="popup36" onclick="closePopup36()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1HMJMiErj2bOVJyvwnyGq4qry72JgHqQX"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1HMJMiErj2bOVJyvwnyGq4qry72JgHqQX" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Michael Wayne</h2>
                   <div class="card-content">
@@ -1109,11 +1028,8 @@
           </div>
           <div class="cardb">
             <div class="card">
-              <img
-                src="http://drive.google.com/uc?export=view&id=1lL71LgKdy-bwk3QefP4DAhQhAnVch6CY"
-                alt=""
-                onclick="openPopup37()"
-              />
+              <img src="http://drive.google.com/uc?export=view&id=1lL71LgKdy-bwk3QefP4DAhQhAnVch6CY" alt=""
+                " />
               <div class="cardtxt">
                 <p>Zulfa Hafizh Kusuma</p>
               </div>
@@ -1121,11 +1037,8 @@
             <div class="popup" id="popup37" onclick="closePopup37()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1lL71LgKdy-bwk3QefP4DAhQhAnVch6CY"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1lL71LgKdy-bwk3QefP4DAhQhAnVch6CY" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Zulfa Hafizh Kusuma</h2>
                   <div class="card-content">
@@ -1142,11 +1055,8 @@
           </div>
           <div class="cardw">
             <div class="card">
-              <img
-                src="http://drive.google.com/uc?export=view&id=1UEunCoWq8UaaV2Yotu9rL5Z_q9pMkbPG"
-                alt=""
-                onclick="openPopup38()"
-              />
+              <img src="http://drive.google.com/uc?export=view&id=1UEunCoWq8UaaV2Yotu9rL5Z_q9pMkbPG" alt=""
+                " />
               <div class="cardtxt">
                 <p>M. Harvian Dito S.</p>
               </div>
@@ -1154,11 +1064,8 @@
             <div class="popup" id="popup38" onclick="closePopup38()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1UEunCoWq8UaaV2Yotu9rL5Z_q9pMkbPG"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1UEunCoWq8UaaV2Yotu9rL5Z_q9pMkbPG" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Muhammad Harvian Dito Syahputra</h2>
                   <div class="card-content">
@@ -1173,13 +1080,10 @@
               </div>
             </div>
           </div>
-          <div class="cardb">
+          <div class="cardw">
             <div class="card">
-              <img
-                src="http://drive.google.com/uc?export=view&id=1jnaeY1QqdqJKWswgXJBMnxU6pduJH5qa"
-                alt=""
-                onclick="openPopup39()"
-              />
+              <img src="http://drive.google.com/uc?export=view&id=1jnaeY1QqdqJKWswgXJBMnxU6pduJH5qa" alt=""
+                " />
               <div class="cardtxt">
                 <p>Ilhan Ahmad Syafa</p>
               </div>
@@ -1187,11 +1091,8 @@
             <div class="popup" id="popup39" onclick="closePopup39()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1jnaeY1QqdqJKWswgXJBMnxU6pduJH5qa"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1jnaeY1QqdqJKWswgXJBMnxU6pduJH5qa" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Ilhan Ahmad Syafa</h2>
                   <div class="card-content">
@@ -1206,13 +1107,14 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- nrp 41 - 44 -->
-        <div class="container">
+
+          <!-- nrp 41 - 44 -->
           <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup40()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1OnQyarrAMUA6428hWxT0gns_0se7c5qr" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Nicholas Marco Weinandra</p>
               </div>
@@ -1220,11 +1122,8 @@
             <div class="popup" id="popup40" onclick="closePopup40()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1OnQyarrAMUA6428hWxT0gns_0se7c5qr"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1OnQyarrAMUA6428hWxT0gns_0se7c5qr" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Nicholas Marco Weinandra</h2>
                   <div class="card-content">
@@ -1241,7 +1140,9 @@
           </div>
           <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup41()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1adgPxSCcxwSffWLja-P95kJnN7dVa6z3" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p> George David Nebore</p>
               </div>
@@ -1249,11 +1150,8 @@
             <div class="popup" id="popup41" onclick="closePopup41()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1adgPxSCcxwSffWLja-P95kJnN7dVa6z3"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1adgPxSCcxwSffWLja-P95kJnN7dVa6z3" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name"> George David Nebore</h2>
                   <div class="card-content">
@@ -1270,7 +1168,9 @@
           </div>
           <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup42()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1AOKYD9R_zKNOdbtZ0H8FY-x_Cll4EbBz" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Subkhan Mas Udi</p>
               </div>
@@ -1278,11 +1178,8 @@
             <div class="popup" id="popup42" onclick="closePopup42()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1AOKYD9R_zKNOdbtZ0H8FY-x_Cll4EbBz"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1AOKYD9R_zKNOdbtZ0H8FY-x_Cll4EbBz" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Subkhan Mas Udi</h2>
                   <div class="card-content">
@@ -1297,9 +1194,11 @@
               </div>
             </div>
           </div>
-          <div class="cardw">
+          <div class="cardb">
             <div class="card">
-              <img src="" alt="" onclick="openPopup43()" />
+
+              <img src="http://drive.google.com/uc?export=view&id=1MjIotx4qDGY0w9w-L9U105H22DM2e6Gj" alt="Foto Profil"
+                style="width: 100%;" />
               <div class="cardtxt">
                 <p>Gilang Raya Kurniawan </p>
               </div>
@@ -1307,11 +1206,8 @@
             <div class="popup" id="popup43" onclick="closePopup43()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1MjIotx4qDGY0w9w-L9U105H22DM2e6Gj"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1MjIotx4qDGY0w9w-L9U105H22DM2e6Gj" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
                   <h2 class="pop-name">Gilang Raya Kurniawan </h2>
                   <div class="card-content">
@@ -1326,34 +1222,30 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- nrp 45 - 48 -->
-        <div class="container">
+          <!-- nrp 45 - 48 -->
           <div class="cardw">
             <div class="card">
-              <img src="" alt="" onclick="openPopup44()" />
+              <img src="http://drive.google.com/uc?export=view&id=1znJkib-SAos4F46oOVVPUWhddDxMu98D" alt=""
+                " />
               <div class="cardtxt">
-                <p>Dwiyasa Nakula</p>
+                <p>Imam Nurhadi</p>
               </div>
             </div>
             <div class="popup" id="popup44" onclick="closePopup44()">
               <div class="popup-content">
                 <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src=""
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
+                <img src="http://drive.google.com/uc?export=view&id=1znJkib-SAos4F46oOVVPUWhddDxMu98D" alt="Foto Profil"
+                  style="width: 100%;" />
                 <div class="description">
-                  <h2 class="pop-name">Dwiyasa Nakula</h2>
+                  <h2 class="pop-name">Imam Nurhadi</h2>
                   <div class="card-content">
-                    <p>NRP: 5027221001</p>
-                    <p>Tanggal Lahir: 12/6/2004</p>
-                    <p>Asal : Sidoarjo, Jawa Timur</p>
-                    <p>IG : @dwiyasa_nakula</p>
-                    <p>MBTI : INFJ-A</p>
-                    <p>HOBI : Baca</p>
+                    <p>NRP: 5027221046</p>
+                    <p>Tanggal Lahir: 01/10/2004</p>
+                    <p>Asal : Kediir, Jawa Timur</p>
+                    <p>IG : @jack_klunting</p>
+                    <p>MBTI : ENFJ-T</p>
+                    <p>HOBI : Menikmati</p>
                   </div>
                 </div>
               </div>
@@ -1361,2381 +1253,717 @@
           </div>
           <div class="cardb">
             <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1jvVP0dzEzbnrsX2zilsbtPK4FtX9yih1" alt="" onclick="openPopup45()" />
-              <div class="cardtxt">
-                <p>Jody Hezekiah T.S.</p>
-              </div>
-            </div>
-            <div class="popup" id="popup45" onclick="closePopup45()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1jvVP0dzEzbnrsX2zilsbtPK4FtX9yih1"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Jody Hezekiah T.S.</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221050</p>
-                    <p>Tanggal Lahir: 21/8/2004</p>
-                    <p>Asal : Palembang, Sumatera Selatan</p>
-                    <p>IG : im.notjs</p>
-                    <p>MBTI : ENFP-T</p>
-                    <p>HOBI : Gaming</p>
-                  </div>
-                </div>
-              </div>
+              <img src="http://drive.google.com/uc?export=view&id=13uUMJZfhtis9JkgPN3d4dRkuEXJ9fE0E" alt="" " />
+            <div class=" cardtxt">
+              <p>Angellia Christie</p>
             </div>
           </div>
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1wc1PBv0jUwGJIJmjt2Xu25zxW34tK_CQ" alt="" onclick="openPopup46()" />
-              <div class="cardtxt">
-                <p>Ditya Wahyu Ramadhan</p>
-              </div>
-            </div>
-            <div class="popup" id="popup46" onclick="closePopup46()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1wc1PBv0jUwGJIJmjt2Xu25zxW34tK_CQ"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Ditya Wahyu Ramadhan</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221051</p>
-                    <p>Tanggal Lahir: 27/10/2003</p>
-                    <p>Asal : Surabaya, Jawa Timur</p>
-                    <p>IG : ditya_wr03</p>
-                    <p>MBTI : ISFP-A</p>
-                    <p>HOBI : Jaga Toko</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1lIhD0OcCInzQjVad0TxMgvh66X1d-yuA" alt="" onclick="openPopup47()" />
-              <div class="cardtxt">
-                <p>Mochamad Zidan Hadipratama</p>
-              </div>
-            </div>
-            <div class="popup" id="popup47" onclick="closePopup47()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1lIhD0OcCInzQjVad0TxMgvh66X1d-yuA"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Mochamad Zidan Hadipratama</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221052</p>
-                    <p>Tanggal Lahir: 8/5/2004</p>
-                    <p>Asal : Tangerang, Banten</p>
-                    <p>IG : zzzddn_</p>
-                    <p>MBTI : INTJ-T</p>
-                    <p>HOBI : Baca</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- nrp 49 - 52 -->
-        <div class="container">
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1j1LSR0KvMnwhqcdqcOxvw8S5paCGQzWs" alt="" onclick="openPopup48()" />
-              <div class="cardtxt">
-                <p>Aras Rizky Ananta</p>
-              </div>
-            </div>
-            <div class="popup" id="popup48" onclick="closePopup48()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1j1LSR0KvMnwhqcdqcOxvw8S5paCGQzWs"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Aras Rizky Ananta</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221053</p>
-                    <p>Tanggal Lahir: 4/9/2004</p>
-                    <p>Asal : Tuban,Jawa Timur</p>
-                    <p>IG : nevermind3844</p>
-                    <p>MBTI : INFP-T</p>
-                    <p>HOBI : Gaming</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1rv3hNVynLZImM1XstvScDz5NHXo7Lkvh" alt="" onclick="openPopup49()" />
-              <div class="cardtxt">
-                <p>Alma Amira Dewani</p>
-              </div>
-            </div>
-            <div class="popup" id="popup49" onclick="closePopup49()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1rv3hNVynLZImM1XstvScDz5NHXo7Lkvh"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Alma Amira Dewani</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221054</p>
-                    <p>Tanggal Lahir: 9/5/2004</p>
-                    <p>Asal : Cilegon, Banten</p>
-                    <p>IG : almamiraa_</p>
-                    <p>MBTI : ISTP-T</p>
-                    <p>HOBI : baca</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1dwpnKGQXMsBYkiYiwCKHXM5WjMW647p7" alt="" onclick="openPopup50()" />
-              <div class="cardtxt">
-                <p>Awang Fraditya</p>
-              </div>
-            </div>
-            <div class="popup" id="popup50" onclick="closePopup50()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1dwpnKGQXMsBYkiYiwCKHXM5WjMW647p7"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Awang Fraditya</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221055</p>
-                    <p>Tanggal Lahir: 26/5/2004</p>
-                    <p>Asal : Tangerang, Banten</p>
-                    <p>IG : frditya.a</p>
-                    <p>MBTI : INTJ - T</p>
-                    <p>HOBI : turu</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1p1xppUQfnBJ3SeyoL9KQ7pq-Q7K0RhtG" alt="" onclick="openPopup51()" />
-              <div class="cardtxt">
-                <p>Marselinus Krisnawan Riandika</p>
-              </div>
-            </div>
-            <div class="popup" id="popup51" onclick="closePopup51()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1p1xppUQfnBJ3SeyoL9KQ7pq-Q7K0RhtG"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Marselinus Krisnawan Riandika</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221056</p>
-                    <p>Tanggal Lahir: 14/6/2004</p>
-                    <p>Asal : Yogyakarta, DIY</p>
-                    <p>IG : mkr.krisna</p>
-                    <p>MBTI : ESFJ-T</p>
-                    <p>HOBI : Olahraga</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- nrp 53 - 56 -->
-        <div class="container">
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1n1xlNcEZPsjEJsb3XlhTbVhSsIHh19Ac" alt="" onclick="openPopup52()" />
-              <div class="cardtxt">
-                <p>Ahmad Fauzan Daniswara</p>
-              </div>
-            </div>
-            <div class="popup" id="popup52" onclick="closePopup52()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1n1xlNcEZPsjEJsb3XlhTbVhSsIHh19Ac"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Ahmad Fauzan Daniswara</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221057</p>
-                    <p>Tanggal Lahir: /12/2003</p>
-                    <p>Asal : Madiun, Jawa Timur</p>
-                    <p>IG : danitiox12</p>
-                    <p>MBTI : INTP-T</p>
-                    <p>HOBI : Sepak bola</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1vNDpRbs5amsKD794RYtRm_EOm1h90bbF" alt="" onclick="openPopup53()" />
-              <div class="cardtxt">
-                <p>Irfan Qobus Salim</p>
-              </div>
-            </div>
-            <div class="popup" id="popup53" onclick="closePopup53()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1vNDpRbs5amsKD794RYtRm_EOm1h90bbF"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Irfan Qobus Salim</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221058</p>
-                    <p>Tanggal Lahir: 24/3/2004</p>
-                    <p>Asal : Semarang, Jawa Tengah</p>
-                    <p>IG : kingqobus</p>
-                    <p>MBTI : INTP-T</p>
-                    <p>HOBI : Main Game</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=187ATdVIxeP-V9faYzTON-DhJb79xJk19" alt="" onclick="openPopup54()" />
-              <div class="cardtxt">
-                <p>Muhammad Ida Bagus Rafi H</p>
-              </div>
-            </div>
-            <div class="popup" id="popup54" onclick="closePopup54()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=187ATdVIxeP-V9faYzTON-DhJb79xJk19"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Muhammad Ida Bagus Rafi H</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221059</p>
-                    <p>Tanggal Lahir: 31/5/2004</p>
-                    <p>Asal : Jakarta Pusat,DKI Jakarta</p>
-                    <p>IG : rafihabibie2740</p>
-                    <p>MBTI : ISTJ</p>
-                    <p>HOBI : Streaming Film</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardb">
-            <div class="card">
-              <img src="" alt="" onclick="openPopup55()" />
-              <div class="cardtxt">
-                <p>Farrel Aqmar Zaini</p>
-              </div>
-            </div>
-            <div class="popup" id="popup55" onclick="closePopup55()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src=""
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Farrel Aqmar Zaini</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221060</p>
-                    <p>Tanggal Lahir: 19/3/2004</p>
-                    <p>Asal : Jakarta, Jakarta Timur</p>
-                    <p>IG : sangenjoymahasantuy</p>
-                    <p>MBTI : WO</p>
-                    <p>HOBI : </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- nrp 57 - 60 -->
-        <div class="container">
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=15NgqYG1cGElCnZT4h3Y82Q3j7XZIDQBi" alt="" onclick="openPopup56()" />
-              <div class="cardtxt">
-                <p>Hafiz Akmaldi Santosa</p>
-              </div>
-            </div>
-            <div class="popup" id="popup56" onclick="closePopup56()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=15NgqYG1cGElCnZT4h3Y82Q3j7XZIDQBi"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Hafiz Akmaldi Santosa</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221061</p>
-                    <p>Tanggal Lahir: 16/4/2004</p>
-                    <p>Asal : Semarang, Jawa Tengah</p>
-                    <p>IG : khafeess</p>
-                    <p>MBTI : INTJ-A</p>
-                    <p>HOBI : mencari tau</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1AX0r6QdhZW2brBiiycw-PbrJ6Trk0axA" alt="" onclick="openPopup57()" />
-              <div class="cardtxt">
-                <p>Jonathan Adithya Baswara</p>
-              </div>
-            </div>
-            <div class="popup" id="popup57" onclick="closePopup57()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1AX0r6QdhZW2brBiiycw-PbrJ6Trk0axA"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Jonathan Adithya Baswara</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221062</p>
-                    <p>Tanggal Lahir: 3/7/2004</p>
-                    <p>Asal : Magelang, Jawa Tengah </p>
-                    <p>IG : jo_nathanab</p>
-                    <p>MBTI : INTJ-T</p>
-                    <p>HOBI : Mendengarkan Musik</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1GjsQdF6byIaL4BZdbp-woDHoZhztWaPB" alt="" onclick="openPopup58()" />
-              <div class="cardtxt">
-                <p>Salomo</p>
-              </div>
-            </div>
-            <div class="popup" id="popup58" onclick="closePopup58()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1GjsQdF6byIaL4BZdbp-woDHoZhztWaPB"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Salomo</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221063</p>
-                    <p>Tanggal Lahir: 18/9/2004</p>
-                    <p>Asal : Manado, Sulawesi Utara</p>
-                    <p>IG : salomo seto</p>
-                    <p>MBTI : ENFP-A</p>
-                    <p>HOBI : Ngewibu</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1_T9F9k6UBuS5J8YfOwR7rXSMvO1W2BUv" alt="" onclick="openPopup59()" />
-              <div class="cardtxt">
-                <p>Nur Azka Rahadiansyah</p>
-              </div>
-            </div>
-            <div class="popup" id="popup59" onclick="closePopup59()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1_T9F9k6UBuS5J8YfOwR7rXSMvO1W2BUv"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Nur Azka Rahadiansyah</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221064</p>
-                    <p>Tanggal Lahir: 12/12/2004</p>
-                    <p>Asal : Malang, Jawa Timur</p>
-                    <p>IG : aazkarhdn</p>
-                    <p>MBTI : ENFP-T</p>
-                    <p>HOBI : Bikin JJ😎</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- nrp 61 - 64 -->
-        <div class="container">
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=10E9ftq4AeS0r_cihWiyCuafKwH2bmpmo" alt="" onclick="openPopup60()" />
-              <div class="cardtxt">
-                <p>Naufan Zaki Luqmanulhakim </p>
-              </div>
-            </div>
-            <div class="popup" id="popup60" onclick="closePopup60()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=10E9ftq4AeS0r_cihWiyCuafKwH2bmpmo"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Naufan Zaki Luqmanulhakim </h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221065</p>
-                    <p>Tanggal Lahir: 2/5/2004</p>
-                    <p>Asal : Tangerang Selatan, Banten</p>
-                    <p>IG : naufanzakii</p>
-                    <p>MBTI : INFJ-T</p>
-                    <p>HOBI : mbenerin behel</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1-JTl0YZGqBlkBvX27rqa2ovtBsi2mG18" alt="" onclick="openPopup61()" />
-              <div class="cardtxt">
-                <p>Rafif Dhimaz Ardhana</p>
-              </div>
-            </div>
-            <div class="popup" id="popup61" onclick="closePopup61()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1-JTl0YZGqBlkBvX27rqa2ovtBsi2mG18"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Rafif Dhimaz Ardhana</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221066</p>
-                    <p>Tanggal Lahir: 17/1/2004</p>
-                    <p>Asal : Yogyakarta, DIY</p>
-                    <p>IG : r.dhim</p>
-                    <p>MBTI : ISFP-T</p>
-                    <p>HOBI : Nyetir</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1iGEyf2h6_BB3iWYTcoOwKHwFYbiAwWfA" alt="" onclick="openPopup62()" />
-              <div class="cardtxt">
-                <p>Muhammad Rifqi Oktaviansyah</p>
-              </div>
-            </div>
-            <div class="popup" id="popup62" onclick="closePopup62()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1iGEyf2h6_BB3iWYTcoOwKHwFYbiAwWfA"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Muhammad Rifqi Oktaviansyah</h2>
-                  <div class="card-content">
-                    <p>NRP: 50272210671</p>
-                    <p>Tanggal Lahir: 6/10/2004</p>
-                    <p>Asal : Surabaya, Jawa Timur</p>
-                    <p>IG : viansyah._</p>
-                    <p>MBTI : INTJ-T</p>
-                    <p>HOBI : bing chilling</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1huRtKyPrkYibsvhKHAjJlTQxwQ4cW03e" alt="" onclick="openPopup63()" />
-              <div class="cardtxt">
-                <p>Sighra Attariq Sumere Jati</p>
-              </div>
-            </div>
-            <div class="popup" id="popup63" onclick="closePopup63()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1huRtKyPrkYibsvhKHAjJlTQxwQ4cW03e"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Sighra Attariq Sumere Jati</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221068</p>
-                    <p>Tanggal Lahir: 21/1/2005</p>
-                    <p>Asal : Malang, Jawa Timur</p>
-                    <p>IG : sighraa</p>
-                    <p>MBTI : INFJ -A</p>
-                    <p>HOBI : pulkam</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- nrp 65 - 68 -->
-        <div class="container">
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=14mbAx2M6ZisNUYJXrUixYuHVZNDrRtJv" alt="" onclick="openPopup64()" />
-              <div class="cardtxt">
-                <p>Stephanie Hebrina Mabunbun Simatupang</p>
-              </div>
-            </div>
-            <div class="popup" id="popup64" onclick="closePopup64()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=14mbAx2M6ZisNUYJXrUixYuHVZNDrRtJv"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Stephanie Hebrina Mabunbun Simatupang</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221069</p>
-                    <p>Tanggal Lahir: 6/12/2004</p>
-                    <p>Asal : Balikpapan, Kalimantan Timur </p>
-                    <p>IG : hebrinastephanie</p>
-                    <p>MBTI : ENFP</p>
-                    <p>HOBI : nonton drakor</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1Q2aHVrqnPkwOXZrhcvi9eLvKX-0x8_BP" alt="" onclick="openPopup65()" />
-              <div class="cardtxt">
-                <p>Dwiyasa Nakula</p>
-              </div>
-            </div>
-            <div class="popup" id="popup65" onclick="closePopup65()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1Q2aHVrqnPkwOXZrhcvi9eLvKX-0x8_BP"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Khansa Adia Rahma</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221071</p>
-                    <p>Tanggal Lahir: 19/8/2004</p>
-                    <p>Asal : Bontang, Kalimantan Timur</p>
-                    <p>IG : Khansaadiar</p>
-                    <p>MBTI : ENFJ-A</p>
-                    <p>HOBI : masak</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardb">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1mUB9-QQMpLQ8FSVZZ-LH04Pj8GC0uQfo" alt="" onclick="openPopup66()" />
-              <div class="cardtxt">
-                <p>Zidny Ilman Nafi'an</p>
-              </div>
-            </div>
-            <div class="popup" id="popup66" onclick="closePopup66()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1mUB9-QQMpLQ8FSVZZ-LH04Pj8GC0uQfo"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Zidny Ilman Nafi'an</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221072</p>
-                    <p>Tanggal Lahir: 2/2/2004</p>
-                    <p>Asal : Subang, Jawa Barat</p>
-                    <p>IG : jidniin</p>
-                    <p>MBTI : INFJ-A</p>
-                    <p>HOBI : Pulkam</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cardw">
-            <div class="card">
-              <img src="http://drive.google.com/uc?export=view&id=1A1EQYHVl_tu3x3Vwx_21212hY9aKDs72" alt="" onclick="openPopup67()" />
-              <div class="cardtxt">
-                <p>Almendo Jekson Darwin Naftali Kambu</p>
-              </div>
-            </div>
-            <div class="popup" id="popup67" onclick="closePopup67()">
-              <div class="popup-content">
-                <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
-                <img
-                  src="http://drive.google.com/uc?export=view&id=1A1EQYHVl_tu3x3Vwx_21212hY9aKDs72"
-                  alt="Foto Profil"
-                  style="width: 100%; height: auto"
-                />
-                <div class="description">
-                  <h2 class="pop-name">Almendo Jekson Darwin Naftali Kambu</h2>
-                  <div class="card-content">
-                    <p>NRP: 5027221073</p>
-                    <p>Tanggal Lahir: 9/6/2003</p>
-                    <p>Asal : Serui, Papua </p>
-                    <p>IG : almendokambu_9</p>
-                    <p>MBTI : </p>
-                    <p>HOBI : Basket</p>
-                  </div>
-                </div>
->>>>>>> 01bd7d83463e6728f9c948b5488ca04fbeed5a24
+          <div class="popup" id="popup44" onclick="closePopup44()">
+            <div class="popup-content">
+              <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+              <img src="http://drive.google.com/uc?export=view&id=13uUMJZfhtis9JkgPN3d4dRkuEXJ9fE0E" alt="" " />
+              <div class=" description">
+              <h2 class="pop-name">Angellia Christie</h2>
+              <div class="card-content">
+                <p>NRP: 5027221047</p>
+                <p>Tanggal Lahir: 19/01/2004</p>
+                <p>Asal : Temanggung, Jawa Tengah</p>
+                <p>IG : @angl99_</p>
+                <p>MBTI : INTJ-T</p>
+                <p>HOBI : Nonton</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="cardb">
+      <div class="cardw">
         <div class="card">
-          <img src="" alt="" />
+          <img src="http://drive.google.com/uc?export=view&id=1oSpLvy-74H4d9joJxfTAiJ3rno1dApGC" alt="" />
           <div class="cardtxt">
-            <p>Mohammad Arkananta Radithya Taratugang</p>
+            <p>Muhammad Arsy Athallah</p>
           </div>
         </div>
-        <div class="popup" id="popup2" ">
-              <div class=" popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1TBMGgJIJlauzMHqH0rG7-YB3NKwe02Pq" alt="Foto Profil"
-            style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Mohammad Arkananta Radithya Taratugang</h2>
-            <div class="card-content">
-              <p>NRP: 5027221003</p>
-              <p>Tanggal Lahir: 5/16/2004</p>
-              <p>Asal : Bontang, Kalimantan Timur</p>
-              <p>IG : @arkxradit</p>
-              <p>MBTI : ISTP</p>
-              <p>HOBI : liatin cel main</p>
+        <div class="popup" id="popup44" onclick="closePopup44()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1oSpLvy-74H4d9joJxfTAiJ3rno1dApGC" alt="" />
+            <div class="description">
+              <h2 class="pop-name">Muhammad Arsy Athallah</h2>
+              <div class="card-content">
+                <p>NRP: 5027221048</p>
+                <p>Tanggal Lahir: /12/2003</p>
+                <p>Asal : Malang, Jawa Timur</p>
+                <p>IG : @aarsyathallah</p>
+                <p>MBTI : ENFJ-T</p>
+                <p>HOBI : Makan Bagong</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" />
-        <div class="cardtxt">
-          <p>Agas Ananta Wijaya</p>
-        </div>
-      </div>
-      <div class="popup" id="popup3" ">
-              <div class=" popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1rcPHwBbYFvzSlDswylMIPwRkHYygT0Zb" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Agas Ananta Wijaya</h2>
-          <div class="card-content">
-            <p>NRP: 5027221004</p>
-            <p>Tanggal Lahir: 2/6/2004</p>
-            <p>Asal : Malang, Jawa Timur</p>
-            <p>IG : @asnan_xrz</p>
-            <p>MBTI : ISTP-T</p>
-            <p>HOBI : Videography</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 5 - 8 -->
-    <div class="container">
-      <div class="cardw">
+      <div class="cardb">
         <div class="card">
-          <img src="" alt="" />
+          <img src="http://drive.google.com/uc?export=view&id=1UIW2bvKMl_KUTGAl9DRXMftr3uWOBqEH" alt="" />
           <div class="cardtxt">
-            <p>Bhisma Elki Pratama</p>
+            <p>Arsyad Rizantha M. S.</p>
           </div>
         </div>
-        <div class="popup" id="popup4" ">
-              <div class=" popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1136mYEzvb1Z3Po0vpT6mMadCdMys6DKF" alt="Foto Profil"
-            style="width: 100%; height: auto" />
+        <div class="popup" id="popup44"">
+            <div class=" popup-content">
+          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+          <img src="http://drive.google.com/uc?export=view&id=1UIW2bvKMl_KUTGAl9DRXMftr3uWOBqEH" alt="Foto Profil"
+            style="width: 100%;" />
           <div class="description">
-            <h2 class="pop-name">Bhisma Elki Pratama</h2>
+            <h2 class="pop-name">Arsyad Rizantha Maulana Salim</h2>
             <div class="card-content">
-              <p>NRP: 5027221005</p>
-              <p>Tanggal Lahir: 12/17/2003</p>
-              <p>Asal : Gresik, Jawa Timur</p>
-              <p>IG : @bhisma.pratama</p>
-              <p>MBTI : ENFJ-A</p>
-              <p>HOBI : ngoding dikit</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" />
-        <div class="cardtxt">
-          <p>M.Januar Eko Wicaksono</p>
-        </div>
-      </div>
-      <div class="popup" id="popup5" ">
-              <div class=" popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1g3gOAR6ncD8t0yQYUsR_TugCFxRO3U0c" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">M.Januar Eko Wicaksono</h2>
-          <div class="card-content">
-            <p>NRP: 5027221006</p>
-            <p>Tanggal Lahir: 1/3/2004</p>
-            <p>Asal : Pasuruan, Jawa Timur</p>
-            <p>IG : @yanuar_prozpektor</p>
-            <p>MBTI : ESFJ-A</p>
-            <p>HOBI : Basket</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" />
-        <div class="cardtxt">
-          <p>Jeany Aurellia Putri Dewati</p>
-        </div>
-      </div>
-      <div class="popup" id="popup6" ">
-              <div class=" popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1AIPuHXJ_Y3SUIgYtAlKmPe0PMIDlun39" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Jeany Aurellia Putri Dewati</h2>
-          <div class="card-content">
-            <p>NRP: 5027221008</p>
-            <p>Tanggal Lahir: 12/10/2003</p>
-            <p>Asal : Surabaya, Jawa Timur</p>
-            <p>IG : @jeany_aurellia</p>
-            <p>MBTI : ISFP-T</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <!-- nrp 9 - 12 -->
-    <div class="container">
-      <div class="cardb">
-        <div class="card">
-          <img src="" alt="" />
-          <div class="cardtxt">
-            <p>Asadel Naufaleo</p>
-          </div>
-        </div>
-        <div class="popup" id="popup8" ">
-              <div class=" popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1SP4gSPpOuyXJDipp--8MIeRyrkQ6oZil" alt="Foto Profil"
-            style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Asadel Naufaleo</h2>
-            <div class="card-content">
-              <p>NRP: 5027221009</p>
-              <p>Tanggal Lahir: 8/8/2004</p>
-              <p>Asal : Jakarta Selatan, DKI Jakarta</p>
-              <p>IG : @asadeln</p>
-              <p>MBTI : ISTP-T</p>
-              <p>HOBI : Main, dengerin lagu</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" />
-        <div class="cardtxt">
-          <p>Mutiara Nurhaliza</p>
-        </div>
-      </div>
-      <div class="popup" id="popup9" ">
-              <div class=" popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1LPNHrkprWWhsUlpx26EeabUbS2_WoOvg" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Mutiara Nurhaliza</h2>
-          <div class="card-content">
-            <p>NRP: 5027221010</p>
-            <p>Tanggal Lahir: 3/24/2004</p>
-            <p>Asal : Madiun, Jawa Timur</p>
-            <p>IG : @Mutiaraannh</p>
-            <p>MBTI : INFJ-T</p>
-            <p>HOBI : Makan</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Monika Damelia Hutapea</p>
-      </div>
-    </div>
-    <div class="popup" id="popup10">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1UByFo68lYUNhc-LaiBMKYralcYJ_3K1s" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Monika Damelia Hutapea</h2>
-          <div class="card-content">
-            <p>NRP: 5027221011</p>
-            <p>Tanggal Lahir: 4/27/2004</p>
-            <p>Asal : Pematangsiantar, Sumatera Utara</p>
-            <p>IG : @monikahtp_</p>
-            <p>MBTI : INFP-T</p>
-            <p>HOBI : Travelling</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Marcelinus Alvinanda Chrisantya</p>
-      </div>
-    </div>
-    <div class="popup" id="popup11">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1NmhF-go7r1mbAU91WJAeQXXb4i-quBfF" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Marcelinus Alvinanda Chrisantya</h2>
-          <div class="card-content">
-            <p>NRP: 5027221012</p>
-            <p>Tanggal Lahir: 6/11/2003</p>
-            <p>Asal : Madiun, Jawa Timur</p>
-            <p>IG : @mreezx</p>
-            <p>MBTI : INFJ-T</p>
-            <p>HOBI : liatin arka main</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 13 - 16 -->
-    <div class="container">
-      <div class="cardw">
-        <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Rizki Ramadhani</p>
-        </div>
-      </div>
-      <div class="popup" id="popup12">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1UZAmdpxdWy_v3zgT8uTRPzolZjlhSUSu" alt="Foto Profil"
-            style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Rizki Ramadhani</h2>
-            <div class="card-content">
-              <p>NRP: 5027221013</p>
-              <p>Tanggal Lahir: 10/26/2003</p>
-              <p>Asal : Tulang Bawang, Lampung</p>
-              <p>IG : @dhan.nni</p>
-              <p>MBTI : ESFJ-A</p>
-              <p>HOBI : Futsal</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Siti Nur Ellyzah</p>
-      </div>
-    </div>
-    <div class="popup" id="popup13">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1us1jmmJcF4MUgalC0Q3Ai5wigFA1JjNp" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Siti Nur Ellyzah</h2>
-          <div class="card-content">
-            <p>NRP: 5027221014</p>
-            <p>Tanggal Lahir: 9/25/2004</p>
-            <p>Asal : Jakarta Pusat, DKI Jakarta</p>
-            <p>IG : @telyzah</p>
-            <p>MBTI : INFJ-T</p>
-            <p>HOBI : Nyanyi</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Rehana Putri Salsabilla</p>
-      </div>
-    </div>
-    <div class="popup" id="popup14">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=15DINnHQ8xzAmLFkR7nfmfCdOR0rShUL7" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Rehana Putri Salsabilla</h2>
-          <div class="card-content">
-            <p>NRP: 5027221015</p>
-            <p>Tanggal Lahir: 9/25/2003</p>
-            <p>Asal : Tulungagung, Jawa Timur</p>
-            <p>IG : @rrehanaa_</p>
-            <p>MBTI : ESFJ-A</p>
-            <p>HOBI : Membaca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Clara Valentina</p>
-      </div>
-    </div>
-    <div class="popup" id="popup15">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1CCq6eTqbHQtBArobJG9UvP0q-yny8Sju" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Clara Valentina</h2>
-          <div class="card-content">
-            <p>NRP: 5027221016</p>
-            <p>Tanggal Lahir: 8/4/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @clrvaa</p>
-            <p>MBTI : ISTP-T</p>
-            <p>HOBI : Makan</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 17 - 20 -->
-    <div class="container">
-      <div class="cardb">
-        <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Etha Felisya Br Purba</p>
-        </div>
-      </div>
-      <div class="popup" id="popup16">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1Jmfcg6sf7rhqAV7j1FJha0sgRJROXf8k" alt="Foto Profil"
-            style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Etha Felisya Br Purba</h2>
-            <div class="card-content">
-              <p>NRP: 5027221017</p>
-              <p>Tanggal Lahir: 10/18/2003</p>
-              <p>Asal : Kabanjahe, Sumatera Utara</p>
-              <p>IG : @etha.felisya</p>
-              <p>MBTI : ISFJ</p>
-              <p>HOBI : Baca manhwa</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Gabriella Erlinda Wijaya</p>
-      </div>
-    </div>
-    <div class="popup" id="popup17">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1xpqJOuEu85SewZAq_VbWMfuniTPclVv8" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Gabriella Erlinda Wijaya</h2>
-          <div class="card-content">
-            <p>NRP: 5027221018</p>
-            <p>Tanggal Lahir: 6/11/2003</p>
-            <p>Asal : Surabaya, Jawa Timur</p>
-            <p>IG : @gab_e11</p>
-            <p>MBTI : INFP-T</p>
-            <p>HOBI : menonton film</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Sylvia Febrianti</p>
-      </div>
-    </div>
-    <div class="popup" id="popup18">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=19eEb5CrO4fw8RrauJt37wLdssZC15sH2" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Sylvia Febrianti</h2>
-          <div class="card-content">
-            <p>NRP: 5027221019</p>
-            <p>Tanggal Lahir: 2/14/2004</p>
-            <p>Asal : Bangka Belitung</p>
-            <p>IG : @sylviafebriantii</p>
-            <p>MBTI : ISTJ-A</p>
-            <p>HOBI : Gaming</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Wikri Cahya Syahrilla</p>
-      </div>
-    </div>
-    <div class="popup" id="popup19">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1f1cV71Uaw_Q1AVpVW3a5aSu3m77etyW6" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Wikri Cahya Syahrila</h2>
-          <div class="card-content">
-            <p>NRP: 5027221020</p>
-            <p>Tanggal Lahir: 10/28/2003</p>
-            <p>Asal : Madiun, Jawa Timur</p>
-            <p>IG : @wikri_cahya</p>
-            <p>MBTI : INTJ</p>
-            <p>HOBI : turu</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 21 - 24 -->
-    <div class="container">
-      <div class="cardw">
-        <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Steven Figo</p>
-        </div>
-      </div>
-      <div class="popup" id="popup20">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1Lns-kZ9OLFGBay0qhV1N7PGjc1g9gVYW" alt="Foto Profil"
-            style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Steven Figo</h2>
-            <div class="card-content">
-              <p>NRP: 5027221021</p>
-              <p>Tanggal Lahir: 11/30/2004</p>
-              <p>Asal : Sibolga, Sumatera Utara</p>
-              <p>IG : @steven_7190</p>
-              <p>MBTI : ENFJ-T</p>
-              <p>HOBI : Nyanyi</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Bintang Ryan Wardana</p>
-      </div>
-    </div>
-    <div class="popup" id="popup21">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=16Eqvhz0KnJxmhbKUJRLJxt-qBiqtpm4I" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Bintang Ryan Wardana</h2>
-          <div class="card-content">
-            <p>NRP: 5027221022</p>
-            <p>Tanggal Lahir: 9/13/2004</p>
-            <p>Asal : Medan, Sumatera Utara</p>
-            <p>IG : @bintangryannn</p>
-            <p>MBTI : ESTJ-A</p>
-            <p>HOBI : Makan</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Salsabila Amalia Harjanto</p>
-      </div>
-    </div>
-    <div class="popup" id="popup22">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1XN-YewgydiqT9HMWRGgX4v8tHgwgBdQK" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Salsabila Amalia Harjanto</h2>
-          <div class="card-content">
-            <p>NRP: 5027221023</p>
-            <p>Tanggal Lahir: 9/26/2004</p>
-            <p>Asal : Padang, Sumatera Barat</p>
-            <p>IG : @salsabilahrjnt</p>
-            <p>MBTI : ISTJ-T</p>
-            <p>HOBI : Hand Lettering</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Wilson Matthew Thendry</p>
-      </div>
-    </div>
-    <div class="popup" id="popup23">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=18HRF745FU9cnpR4Twu0t50qKORBVeVzV" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Wilson Matthew Thendry</h2>
-          <div class="card-content">
-            <p>NRP: 5027221024</p>
-            <p>Tanggal Lahir: 4/30/2003</p>
-            <p>Asal :Tangerang </p>
-            <p>IG : @weemweem121</p>
-            <p>MBTI : INFP</p>
-            <p>HOBI : main musik</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 25 - 28 -->
-    <div class="container">
-      <div class="cardb">
-        <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Fazrul Ahmad Fadhilah</p>
-        </div>
-      </div>
-      <div class="popup" id="popup24">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1tejDouYD_vErXXGygebEtNARBjD9WIOc" alt="Foto Profil"
-            style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Fazrul Ahmad Fadhilah</h2>
-            <div class="card-content">
-              <p>NRP: 5027221025</p>
-              <p>Tanggal Lahir: 8/4/2005</p>
-              <p>Asal : Bandung, Jawa Barat</p>
-              <p>IG : @fazrulahmd</p>
-              <p>MBTI : ESFP-T</p>
-              <p>HOBI : ndengerin lagu</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Muhammad Faishal Rizqy</p>
-      </div>
-    </div>
-    <div class="popup" id="popup25">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1_P7DXoJy99u30IRnMT8mQe1c2xAXJFXH" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Muhammad Faishal Rizqy</h2>
-          <div class="card-content">
-            <p>NRP: 5027221026</p>
-            <p>Tanggal Lahir: 11/24/2002</p>
-            <p>Asal : Bandung, Jawa Barat</p>
-            <p>IG : @faishalrizqy24</p>
-            <p>MBTI : INTP-A</p>
-            <p>HOBI : merenung</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Samuel Yuma Krismata</p>
-      </div>
-    </div>
-    <div class="popup" id="popup26">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1B88S3CKz5a8YiYAiOBr8KlKtHQgjlIpb" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Samuel Yuma Krismata</h2>
-          <div class="card-content">
-            <p>NRP: 5027221029</p>
-            <p>Tanggal Lahir: 7/11/2003</p>
-            <p>Asal : Sragen, Jawa Tengah</p>
-            <p>IG : @samuelyumaa</p>
-            <p>MBTI : ISFJ-T</p>
-            <p>HOBI : bikin error</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Atha Rahma Arianti</p>
-      </div>
-    </div>
-    <div class="popup" id="popup27">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=11E9z7CLpUw8uk9XOTQSC18POAiIoA35t" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Atha Rahma Arianti</h2>
-          <div class="card-content">
-            <p>NRP: 5027221030</p>
-            <p>Tanggal Lahir: 8/5/2004</p>
-            <p>Asal : Surakarta, Jawa Tengah</p>
-            <p>IG : @tharahmaa</p>
-            <p>MBTI : INTP-T</p>
-            <p>HOBI : masak</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 29 - 32 -->
-    <div class="container">
-      <div class="cardw">
-        <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Gavriel Pramuda Kurniaadi</p>
-        </div>
-      </div>
-      <div class="popup" id="popup28">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1EKDq8bn8bE4x4K8aiyDMpiB1o_R6oaMl" alt="Foto Profil"
-            style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Gavriel Pramuda Kurniaadi</h2>
-            <div class="card-content">
-              <p>NRP: 5027221031</p>
-              <p>Tanggal Lahir: 11/8/2003</p>
-              <p>Asal : Semarang, Jawa Tengah</p>
-              <p>IG : @gavrieladi12</p>
-              <p>MBTI : INFP</p>
-              <p>HOBI : benerin error</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Muhammad Afif</p>
-      </div>
-    </div>
-    <div class="popup" id="popup29">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1vWxB7nZ7BEnEBtEAU2TirmouhE5slapq" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Muhammad Afif</h2>
-          <div class="card-content">
-            <p>NRP: 5027221032</p>
-            <p>Tanggal Lahir: 5/10/2004</p>
-            <p>Asal : Kota Malang, Jawa Timur</p>
-            <p>IG : @_fif.17</p>
-            <p>MBTI : INFJ-T</p>
-            <p>HOBI : Nyari masalah</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <!-- nrp 33 - 36 -->
-    <div class="container">
-      <div class="cardb">
-        <div class="card">
-          <img src="http://drive.google.com/uc?export=view&id=1gilqqzElduu6BHLsuWRsknmoQ6G7wsQL" alt="ddfd" "
-              />
-              <div class=" cardtxt">
-          <p>Iki Adfi Nur Mohamad</p>
-        </div>
-      </div>
-      <div class="popup" id="popup32">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1gilqqzElduu6BHLsuWRsknmoQ6G7wsQL" alt="Foto Profil1"
-            style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Iki Adfi Nur Mohamad</h2>
-            <div class="card-content">
-              <p>NRP: 5027221033</p>
-              <p>Tanggal Lahir: 20/6/2004</p>
-              <p>Asal : Lumajang, Jawa Timur</p>
-              <p>IG : @ini.adfi</p>
-              <p>MBTI : ENFJ-T</p>
-              <p>HOBI : Menatap masa depan asek</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="http://drive.google.com/uc?export=view&id=1IpEV5Pffv8RbaRaQ3XfGlDNYYidx2K2o" alt="" "
-              />
-              <div class=" cardtxt">
-        <p>Rahmad Aji Wicaksono</p>
-      </div>
-    </div>
-    <div class="popup" id="popup33">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1IpEV5Pffv8RbaRaQ3XfGlDNYYidx2K2o" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Rahmad Aji Wicaksono</h2>
-          <div class="card-content">
-            <p>NRP: 5027221034</p>
-            <p>Tanggal Lahir: 18/12/2004</p>
-            <p>Asal : Surabaya, Jawa Timur</p>
-            <p>IG : @rahmad_a.w</p>
-            <p>MBTI : ESFP-T</p>
-            <p>HOBI : Pc Gaming</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="http://drive.google.com/uc?export=view&id=1y6uGOu-8PKZMudZRYcGCZRAOGln67zst" alt="" "
-              />
-              <div class=" cardtxt">
-        <p>Azzahra Sekar R.</p>
-      </div>
-    </div>
-    <div class="popup" id="popup34">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1y6uGOu-8PKZMudZRYcGCZRAOGln67zst" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Azzahra Sekar Rahmadina</h2>
-          <div class="card-content">
-            <p>NRP: 5027221035</p>
-            <p>Tanggal Lahir: 11/5/2005</p>
-            <p>Asal : Lamongan, Jawa Timur</p>
-            <p>IG : @skr.zhra</p>
-            <p>MBTI : ISFP-T</p>
-            <p>HOBI : Baca Nopel, Nonton KPOP</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="http://drive.google.com/uc?export=view&id=1IxXONvovSfWjB6cRZTQTNs3PTgMN1X1X" alt="" "
-              />
-              <div class=" cardtxt">
-        <p>Jacinta Syilloam</p>
-      </div>
-    </div>
-    <div class="popup" id="popup35">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1IxXONvovSfWjB6cRZTQTNs3PTgMN1X1X" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Jacinta Syilloam</h2>
-          <div class="card-content">
-            <p>NRP: 5027221036</p>
-            <p>Tanggal Lahir: 6/1/2004</p>
-            <p>Asal : Surabaya, Jawa Timur</p>
-            <p>IG : @jacintaleho</p>
-            <p>MBTI : ISTP</p>
-            <p>HOBI : cari uang</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 37 - 40 -->
-    <div class="container">
-      <div class="cardw">
-        <div class="card">
-          <img src="http://drive.google.com/uc?export=view&id=1HMJMiErj2bOVJyvwnyGq4qry72JgHqQX" alt="" "
-              />
-              <div class=" cardtxt">
-          <p>Michael Wayne</p>
-        </div>
-      </div>
-      <div class="popup" id="popup36">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1HMJMiErj2bOVJyvwnyGq4qry72JgHqQX" alt="Foto Profil"
-            style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Michael Wayne</h2>
-            <div class="card-content">
-              <p>NRP: 5027221037</p>
-              <p>Tanggal Lahir: 4/2/2003</p>
+              <p>NRP: 5027221049</p>
+              <p>Tanggal Lahir: 26/07/2004</p>
               <p>Asal : Surabaya, Jawa Timur</p>
-              <p>IG : @mykit22</p>
-              <p>MBTI : ESTP</p>
-              <p>HOBI : kuliah</p>
+              <p>IG : @arsyad_rizantha</p>
+              <p>MBTI : INFP-T</p>
+              <p>HOBI : Bikin Musik</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="http://drive.google.com/uc?export=view&id=1lL71LgKdy-bwk3QefP4DAhQhAnVch6CY" alt="" "
-              />
-              <div class=" cardtxt">
-        <p>Zulfa Hafizh Kusuma</p>
       </div>
-    </div>
-    <div class="popup" id="popup37">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1lL71LgKdy-bwk3QefP4DAhQhAnVch6CY" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Zulfa Hafizh Kusuma</h2>
-          <div class="card-content">
-            <p>NRP: 5027221038</p>
-            <p>Tanggal Lahir: 27/6/2004</p>
-            <p>Asal : Surabaya, Jawa Timur</p>
-            <p>IG : @hafizhkusuma</p>
-            <p>MBTI : INFP-A</p>
-            <p>HOBI : ml (bocil)</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="http://drive.google.com/uc?export=view&id=1UEunCoWq8UaaV2Yotu9rL5Z_q9pMkbPG" alt="" "
-              />
-              <div class=" cardtxt">
-        <p>M. Harvian Dito S.</p>
-      </div>
-    </div>
-    <div class="popup" id="popup38">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1UEunCoWq8UaaV2Yotu9rL5Z_q9pMkbPG" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Muhammad Harvian Dito Syahputra</h2>
-          <div class="card-content">
-            <p>NRP: 5027221039</p>
-            <p>Tanggal Lahir: 16/10/2003</p>
-            <p>Asal : Probolinggo, Jawa Timur</p>
-            <p>IG : @harviandt</p>
-            <p>MBTI : INTJ-A</p>
-            <p>HOBI : ketiduran</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="http://drive.google.com/uc?export=view&id=1jnaeY1QqdqJKWswgXJBMnxU6pduJH5qa" alt="" "
-              />
-              <div class=" cardtxt">
-        <p>Ilhan Ahmad Syafa</p>
-      </div>
-    </div>
-    <div class="popup" id="popup39">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1jnaeY1QqdqJKWswgXJBMnxU6pduJH5qa" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Ilhan Ahmad Syafa</h2>
-          <div class="card-content">
-            <p>NRP: 5027221040</p>
-            <p>Tanggal Lahir: 3/10/2003</p>
-            <p>Asal : Surabaya, Jawa Timur</p>
-            <p>IG : @ilhanahmads</p>
-            <p>MBTI : ENFJ-A</p>
-            <p>HOBI : olahraga</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
 
-    <!-- nrp 41 - 44 -->
-    <div class="container">
+
+
       <div class="cardb">
         <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Nicholas Marco Weinandra</p>
+          <img src="http://drive.google.com/uc?export=view&id=1jvVP0dzEzbnrsX2zilsbtPK4FtX9yih1" alt="" " />
+            <div class=" cardtxt">
+          <p>Jody Hezekiah T.S.</p>
         </div>
       </div>
-      <div class="popup" id="popup40">
+      <div class="popup" id="popup45" onclick="closePopup45()">
         <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="http://drive.google.com/uc?export=view&id=1OnQyarrAMUA6428hWxT0gns_0se7c5qr" alt="Foto Profil"
-            style="width: 100%; height: auto" />
+          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+          <img src="http://drive.google.com/uc?export=view&id=1jvVP0dzEzbnrsX2zilsbtPK4FtX9yih1" alt="Foto Profil"
+            style="width: 100%;" />
           <div class="description">
-            <h2 class="pop-name">Nicholas Marco Weinandra</h2>
+            <h2 class="pop-name">Jody Hezekiah T.S.</h2>
             <div class="card-content">
-              <p>NRP: 5027221042</p>
-              <p>Tanggal Lahir: 9/27/2004</p>
+              <p>NRP: 5027221050</p>
+              <p>Tanggal Lahir: 21/8/2004</p>
+              <p>Asal : Palembang, Sumatera Selatan</p>
+              <p>IG : im.notjs</p>
+              <p>MBTI : ENFP-T</p>
+              <p>HOBI : Gaming</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="cardw">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1wc1PBv0jUwGJIJmjt2Xu25zxW34tK_CQ" alt="" " />
+            <div class=" cardtxt">
+          <p>Ditya Wahyu Ramadhan</p>
+        </div>
+      </div>
+      <div class="popup" id="popup46" onclick="closePopup46()">
+        <div class="popup-content">
+          <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+          <img src="http://drive.google.com/uc?export=view&id=1wc1PBv0jUwGJIJmjt2Xu25zxW34tK_CQ" alt="Foto Profil"
+            style="width: 100%;" />
+          <div class="description">
+            <h2 class="pop-name">Ditya Wahyu Ramadhan</h2>
+            <div class="card-content">
+              <p>NRP: 5027221051</p>
+              <p>Tanggal Lahir: 27/10/2003</p>
               <p>Asal : Surabaya, Jawa Timur</p>
-              <p>IG : @nicholasmarcoo_</p>
-              <p>MBTI : INFJ-T</p>
-              <p>HOBI : makan</p>
+              <p>IG : ditya_wr03</p>
+              <p>MBTI : ISFP-A</p>
+              <p>HOBI : Jaga Toko</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p> George David Nebore</p>
       </div>
-    </div>
-    <div class="popup" id="popup41">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1adgPxSCcxwSffWLja-P95kJnN7dVa6z3" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name"> George David Nebore</h2>
-          <div class="card-content">
-            <p>NRP: 5027221043</p>
-            <p>Tanggal Lahir: 7/12/2004</p>
-            <p>Asal : Jayapura, papua</p>
-            <p>IG : @daveyurbaeee</p>
-            <p>MBTI : INFP-T</p>
-            <p>HOBI : basket</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" <div class="cardtxt">
-        <p>Subkhan Mas Udi</p>
-      </div>
-    </div>
-    <div class="popup" id="popup42">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1AOKYD9R_zKNOdbtZ0H8FY-x_Cll4EbBz" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Subkhan Mas Udi</h2>
-          <div class="card-content">
-            <p>NRP: 5027221044</p>
-            <p>Tanggal Lahir: 12/28/2003</p>
-            <p>Asal : Tuban, Jawa Timur</p>
-            <p>IG : @subkhanmasudi</p>
-            <p>MBTI : ESFJ-T</p>
-            <p>HOBI : Gaming</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Gilang Raya Kurniawan </p>
-      </div>
-    </div>
-    <div class="popup" id="popup43">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="http://drive.google.com/uc?export=view&id=1MjIotx4qDGY0w9w-L9U105H22DM2e6Gj" alt="Foto Profil"
-          style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Gilang Raya Kurniawan </h2>
-          <div class="card-content">
-            <p>NRP: 5027221045</p>
-            <p>Tanggal Lahir: 10/11/2003</p>
-            <p>Asal : Tulungagung, Jawa timur </p>
-            <p>IG : @gilangraya_k</p>
-            <p>MBTI : INFP-T</p>
-            <p>HOBI : Gaming</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 45 - 48 -->
-    <div class="container">
       <div class="cardw">
         <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Dwiyasa Nakula</p>
+          <img src="http://drive.google.com/uc?export=view&id=1lIhD0OcCInzQjVad0TxMgvh66X1d-yuA" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Mochamad Zidan H.</p>
+          </div>
         </div>
-      </div>
-      <div class="popup" id="popup44">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Dwiyasa Nakula</h2>
-            <div class="card-content">
-              <p>NRP: 5027221001</p>
-              <p>Tanggal Lahir: 12/6/2004</p>
-              <p>Asal : Sidoarjo, Jawa Timur</p>
-              <p>IG : @dwiyasa_nakula</p>
-              <p>MBTI : INFJ-A</p>
-              <p>HOBI : Baca</p>
+        <div class="popup" id="popup47" onclick="closePopup47()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1lIhD0OcCInzQjVad0TxMgvh66X1d-yuA" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Mochamad Zidan Hadipratama</h2>
+              <div class="card-content">
+                <p>NRP: 5027221052</p>
+                <p>Tanggal Lahir: 8/5/2004</p>
+                <p>Asal : Tangerang, Banten</p>
+                <p>IG : zzzddn_</p>
+                <p>MBTI : INTJ-T</p>
+                <p>HOBI : Baca</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup45">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup46">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup47">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
 
-    <!-- nrp 49 - 52 -->
-    <div class="container">
+      <!-- nrp 49 - 52 -->
       <div class="cardb">
         <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Dwiyasa Nakula</p>
+          <img src="http://drive.google.com/uc?export=view&id=1j1LSR0KvMnwhqcdqcOxvw8S5paCGQzWs" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Aras Rizky Ananta</p>
+          </div>
         </div>
-      </div>
-      <div class="popup" id="popup48">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Dwiyasa Nakula</h2>
-            <div class="card-content">
-              <p>NRP: 5027221001</p>
-              <p>Tanggal Lahir: 12/6/2004</p>
-              <p>Asal : Sidoarjo, Jawa Timur</p>
-              <p>IG : @dwiyasa_nakula</p>
-              <p>MBTI : INFJ-A</p>
-              <p>HOBI : Baca</p>
+        <div class="popup" id="popup48" onclick="closePopup48()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1j1LSR0KvMnwhqcdqcOxvw8S5paCGQzWs" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Aras Rizky Ananta</h2>
+              <div class="card-content">
+                <p>NRP: 5027221053</p>
+                <p>Tanggal Lahir: 4/9/2004</p>
+                <p>Asal : Tuban,Jawa Timur</p>
+                <p>IG : nevermind3844</p>
+                <p>MBTI : INFP-T</p>
+                <p>HOBI : Gaming</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup49">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup50">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup51">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 53 - 56 -->
-    <div class="container">
       <div class="cardw">
         <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Dwiyasa Nakula</p>
+          <img src="http://drive.google.com/uc?export=view&id=1rv3hNVynLZImM1XstvScDz5NHXo7Lkvh" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Alma Amira Dewani</p>
+          </div>
         </div>
-      </div>
-      <div class="popup" id="popup52">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Dwiyasa Nakula</h2>
-            <div class="card-content">
-              <p>NRP: 5027221001</p>
-              <p>Tanggal Lahir: 12/6/2004</p>
-              <p>Asal : Sidoarjo, Jawa Timur</p>
-              <p>IG : @dwiyasa_nakula</p>
-              <p>MBTI : INFJ-A</p>
-              <p>HOBI : Baca</p>
+        <div class="popup" id="popup49" onclick="closePopup49()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1rv3hNVynLZImM1XstvScDz5NHXo7Lkvh" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Alma Amira Dewani</h2>
+              <div class="card-content">
+                <p>NRP: 5027221054</p>
+                <p>Tanggal Lahir: 9/5/2004</p>
+                <p>Asal : Cilegon, Banten</p>
+                <p>IG : almamiraa_</p>
+                <p>MBTI : ISTP-T</p>
+                <p>HOBI : baca</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup53">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup54">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup55">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 57 - 60 -->
-    <div class="container">
       <div class="cardb">
         <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Dwiyasa Nakula</p>
+          <img src="http://drive.google.com/uc?export=view&id=1dwpnKGQXMsBYkiYiwCKHXM5WjMW647p7" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Awang Fraditya</p>
+          </div>
         </div>
-      </div>
-      <div class="popup" id="popup56">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Dwiyasa Nakula</h2>
-            <div class="card-content">
-              <p>NRP: 5027221001</p>
-              <p>Tanggal Lahir: 12/6/2004</p>
-              <p>Asal : Sidoarjo, Jawa Timur</p>
-              <p>IG : @dwiyasa_nakula</p>
-              <p>MBTI : INFJ-A</p>
-              <p>HOBI : Baca</p>
+        <div class="popup" id="popup50" onclick="closePopup50()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1dwpnKGQXMsBYkiYiwCKHXM5WjMW647p7" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Awang Fraditya</h2>
+              <div class="card-content">
+                <p>NRP: 5027221055</p>
+                <p>Tanggal Lahir: 26/5/2004</p>
+                <p>Asal : Tangerang, Banten</p>
+                <p>IG : frditya.a</p>
+                <p>MBTI : INTJ - T</p>
+                <p>HOBI : turu</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup57">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
+      <div class="cardb">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1p1xppUQfnBJ3SeyoL9KQ7pq-Q7K0RhtG" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Marselinus Krisnawan R.</p>
+          </div>
+        </div>
+        <div class="popup" id="popup51" onclick="closePopup51()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1p1xppUQfnBJ3SeyoL9KQ7pq-Q7K0RhtG" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Marselinus Krisnawan Riandika</h2>
+              <div class="card-content">
+                <p>NRP: 5027221056</p>
+                <p>Tanggal Lahir: 14/6/2004</p>
+                <p>Asal : Yogyakarta, DIY</p>
+                <p>IG : mkr.krisna</p>
+                <p>MBTI : ESFJ-T</p>
+                <p>HOBI : Olahraga</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup58">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup59">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
 
-    <!-- nrp 61 - 64 -->
-    <div class="container">
+      <!-- nrp 53 - 56 -->
       <div class="cardw">
         <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Dwiyasa Nakula</p>
+          <img src="http://drive.google.com/uc?export=view&id=1n1xlNcEZPsjEJsb3XlhTbVhSsIHh19Ac" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Ahmad Fauzan Daniswara</p>
+          </div>
         </div>
-      </div>
-      <div class="popup" id="popup60">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Dwiyasa Nakula</h2>
-            <div class="card-content">
-              <p>NRP: 5027221001</p>
-              <p>Tanggal Lahir: 12/6/2004</p>
-              <p>Asal : Sidoarjo, Jawa Timur</p>
-              <p>IG : @dwiyasa_nakula</p>
-              <p>MBTI : INFJ-A</p>
-              <p>HOBI : Baca</p>
+        <div class="popup" id="popup52" onclick="closePopup52()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1n1xlNcEZPsjEJsb3XlhTbVhSsIHh19Ac" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Ahmad Fauzan Daniswara</h2>
+              <div class="card-content">
+                <p>NRP: 5027221057</p>
+                <p>Tanggal Lahir: /12/2003</p>
+                <p>Asal : Madiun, Jawa Timur</p>
+                <p>IG : danitiox12</p>
+                <p>MBTI : INTP-T</p>
+                <p>HOBI : Sepak bola</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup61">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup62">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup63">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- nrp 65 - 68 -->
-    <div class="container">
       <div class="cardb">
         <div class="card">
-          <img src="" alt="" " />
-              <div class=" cardtxt">
-          <p>Dwiyasa Nakula</p>
+          <img src="http://drive.google.com/uc?export=view&id=1vNDpRbs5amsKD794RYtRm_EOm1h90bbF" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Irfan Qobus Salim</p>
+          </div>
         </div>
-      </div>
-      <div class="popup" id="popup64">
-        <div class="popup-content">
-          <!-- <span class="close-button" >&times;</span> -->
-          <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-          <div class="description">
-            <h2 class="pop-name">Dwiyasa Nakula</h2>
-            <div class="card-content">
-              <p>NRP: 5027221001</p>
-              <p>Tanggal Lahir: 12/6/2004</p>
-              <p>Asal : Sidoarjo, Jawa Timur</p>
-              <p>IG : @dwiyasa_nakula</p>
-              <p>MBTI : INFJ-A</p>
-              <p>HOBI : Baca</p>
+        <div class="popup" id="popup53" onclick="closePopup53()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1vNDpRbs5amsKD794RYtRm_EOm1h90bbF" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Irfan Qobus Salim</h2>
+              <div class="card-content">
+                <p>NRP: 5027221058</p>
+                <p>Tanggal Lahir: 24/3/2004</p>
+                <p>Asal : Semarang, Jawa Tengah</p>
+                <p>IG : kingqobus</p>
+                <p>MBTI : INTP-T</p>
+                <p>HOBI : Main Game</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup65">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
+      <div class="cardw">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=187ATdVIxeP-V9faYzTON-DhJb79xJk19" alt=""
+            " />
+          <div class="cardtxt">
+            <p>M. Ida Bagus Rafi H</p>
+          </div>
+        </div>
+        <div class="popup" id="popup54" onclick="closePopup54()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=187ATdVIxeP-V9faYzTON-DhJb79xJk19" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Muhammad Ida Bagus Rafi H</h2>
+              <div class="card-content">
+                <p>NRP: 5027221059</p>
+                <p>Tanggal Lahir: 31/5/2004</p>
+                <p>Asal : Jakarta Pusat,DKI Jakarta</p>
+                <p>IG : rafihabibie2740</p>
+                <p>MBTI : ISTJ</p>
+                <p>HOBI : Streaming Film</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="cardb">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup66">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
+      <div class="cardw">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1AvzUn7f9jAyP5BhXM3OvHEV9wJ5xQmDZ" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Farrel Aqmar Zaini</p>
+          </div>
+        </div>
+        <div class="popup" id="popup55" onclick="closePopup55()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1AvzUn7f9jAyP5BhXM3OvHEV9wJ5xQmDZ" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Farrel Aqmar Zaini</h2>
+              <div class="card-content">
+                <p>NRP: 5027221060</p>
+                <p>Tanggal Lahir: 19/3/2004</p>
+                <p>Asal : Jakarta, Jakarta Timur</p>
+                <p>IG : sangenjoymahasantuy</p>
+                <p>MBTI : WO</p>
+                <p>HOBI : </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="cardw">
-      <div class="card">
-        <img src="" alt="" " />
-              <div class=" cardtxt">
-        <p>Dwiyasa Nakula</p>
-      </div>
-    </div>
-    <div class="popup" id="popup67">
-      <div class="popup-content">
-        <!-- <span class="close-button" >&times;</span> -->
-        <img src="" alt="Foto Profil" style="width: 100%; height: auto" />
-        <div class="description">
-          <h2 class="pop-name">Dwiyasa Nakula</h2>
-          <div class="card-content">
-            <p>NRP: 5027221001</p>
-            <p>Tanggal Lahir: 12/6/2004</p>
-            <p>Asal : Sidoarjo, Jawa Timur</p>
-            <p>IG : @dwiyasa_nakula</p>
-            <p>MBTI : INFJ-A</p>
-            <p>HOBI : Baca</p>
+
+
+      <!-- nrp 57 - 60 -->
+      <div class="cardb">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=15NgqYG1cGElCnZT4h3Y82Q3j7XZIDQBi" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Hafiz Akmaldi Santosa</p>
+          </div>
+        </div>
+        <div class="popup" id="popup56" onclick="closePopup56()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=15NgqYG1cGElCnZT4h3Y82Q3j7XZIDQBi" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Hafiz Akmaldi Santosa</h2>
+              <div class="card-content">
+                <p>NRP: 5027221061</p>
+                <p>Tanggal Lahir: 16/4/2004</p>
+                <p>Asal : Semarang, Jawa Tengah</p>
+                <p>IG : khafeess</p>
+                <p>MBTI : INTJ-A</p>
+                <p>HOBI : mencari tau</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
-    </div>
+      <div class="cardw">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1AX0r6QdhZW2brBiiycw-PbrJ6Trk0axA" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Jonathan Adithya Baswara</p>
+          </div>
+        </div>
+        <div class="popup" id="popup57" onclick="closePopup57()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1AX0r6QdhZW2brBiiycw-PbrJ6Trk0axA" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Jonathan Adithya Baswara</h2>
+              <div class="card-content">
+                <p>NRP: 5027221062</p>
+                <p>Tanggal Lahir: 3/7/2004</p>
+                <p>Asal : Magelang, Jawa Tengah </p>
+                <p>IG : jo_nathanab</p>
+                <p>MBTI : INTJ-T</p>
+                <p>HOBI : Mendengarkan Musik</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardb">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1GjsQdF6byIaL4BZdbp-woDHoZhztWaPB" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Salomo</p>
+          </div>
+        </div>
+        <div class="popup" id="popup58" onclick="closePopup58()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1GjsQdF6byIaL4BZdbp-woDHoZhztWaPB" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Salomo</h2>
+              <div class="card-content">
+                <p>NRP: 5027221063</p>
+                <p>Tanggal Lahir: 18/9/2004</p>
+                <p>Asal : Manado, Sulawesi Utara</p>
+                <p>IG : salomo seto</p>
+                <p>MBTI : ENFP-A</p>
+                <p>HOBI : Ngewibu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardb">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1_T9F9k6UBuS5J8YfOwR7rXSMvO1W2BUv" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Nur Azka Rahadiansyah</p>
+          </div>
+        </div>
+        <div class="popup" id="popup59" onclick="closePopup59()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1_T9F9k6UBuS5J8YfOwR7rXSMvO1W2BUv" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Nur Azka Rahadiansyah</h2>
+              <div class="card-content">
+                <p>NRP: 5027221064</p>
+                <p>Tanggal Lahir: 12/12/2004</p>
+                <p>Asal : Malang, Jawa Timur</p>
+                <p>IG : aazkarhdn</p>
+                <p>MBTI : ENFP-T</p>
+                <p>HOBI : Bikin JJ😎</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- nrp 61 - 64 -->
+      <div class="cardw">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=10E9ftq4AeS0r_cihWiyCuafKwH2bmpmo" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Naufan Zaki Luqmanulhakim </p>
+          </div>
+        </div>
+        <div class="popup" id="popup60" onclick="closePopup60()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=10E9ftq4AeS0r_cihWiyCuafKwH2bmpmo" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Naufan Zaki Luqmanulhakim </h2>
+              <div class="card-content">
+                <p>NRP: 5027221065</p>
+                <p>Tanggal Lahir: 2/5/2004</p>
+                <p>Asal : Tangerang Selatan, Banten</p>
+                <p>IG : naufanzakii</p>
+                <p>MBTI : INFJ-T</p>
+                <p>HOBI : mbenerin behel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardb">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1-JTl0YZGqBlkBvX27rqa2ovtBsi2mG18" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Rafif Dhimaz Ardhana</p>
+          </div>
+        </div>
+        <div class="popup" id="popup61" onclick="closePopup61()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1-JTl0YZGqBlkBvX27rqa2ovtBsi2mG18" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Rafif Dhimaz Ardhana</h2>
+              <div class="card-content">
+                <p>NRP: 5027221066</p>
+                <p>Tanggal Lahir: 17/1/2004</p>
+                <p>Asal : Yogyakarta, DIY</p>
+                <p>IG : r.dhim</p>
+                <p>MBTI : ISFP-T</p>
+                <p>HOBI : Nyetir</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardw">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1iGEyf2h6_BB3iWYTcoOwKHwFYbiAwWfA" alt=""
+            " />
+          <div class="cardtxt">
+            <p>M. Rifqi Oktaviansyah</p>
+          </div>
+        </div>
+        <div class="popup" id="popup62" onclick="closePopup62()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1iGEyf2h6_BB3iWYTcoOwKHwFYbiAwWfA" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Muhammad Rifqi Oktaviansyah</h2>
+              <div class="card-content">
+                <p>NRP: 50272210671</p>
+                <p>Tanggal Lahir: 6/10/2004</p>
+                <p>Asal : Surabaya, Jawa Timur</p>
+                <p>IG : viansyah._</p>
+                <p>MBTI : INTJ-T</p>
+                <p>HOBI : bing chilling</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardw">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1huRtKyPrkYibsvhKHAjJlTQxwQ4cW03e" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Sighra Attariq Sumere Jati</p>
+          </div>
+        </div>
+        <div class="popup" id="popup63" onclick="closePopup63()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1huRtKyPrkYibsvhKHAjJlTQxwQ4cW03e" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Sighra Attariq Sumere Jati</h2>
+              <div class="card-content">
+                <p>NRP: 5027221068</p>
+                <p>Tanggal Lahir: 21/1/2005</p>
+                <p>Asal : Malang, Jawa Timur</p>
+                <p>IG : sighraa</p>
+                <p>MBTI : INFJ -A</p>
+                <p>HOBI : pulkam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- nrp 65 - 68 -->
+
+      <div class="cardb">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=14mbAx2M6ZisNUYJXrUixYuHVZNDrRtJv" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Stephanie Hebrina M. S.</p>
+          </div>
+        </div>
+        <div class="popup" id="popup64" onclick="closePopup64()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=14mbAx2M6ZisNUYJXrUixYuHVZNDrRtJv" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Stephanie Hebrina Mabunbun Simatupang</h2>
+              <div class="card-content">
+                <p>NRP: 5027221069</p>
+                <p>Tanggal Lahir: 6/12/2004</p>
+                <p>Asal : Balikpapan, Kalimantan Timur </p>
+                <p>IG : hebrinastephanie</p>
+                <p>MBTI : ENFP</p>
+                <p>HOBI : nonton drakor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardw">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1Q2aHVrqnPkwOXZrhcvi9eLvKX-0x8_BP" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Khansa Adia Rahma</p>
+          </div>
+        </div>
+        <div class="popup" id="popup65" onclick="closePopup65()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1Q2aHVrqnPkwOXZrhcvi9eLvKX-0x8_BP" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Khansa Adia Rahma</h2>
+              <div class="card-content">
+                <p>NRP: 5027221071</p>
+                <p>Tanggal Lahir: 19/8/2004</p>
+                <p>Asal : Bontang, Kalimantan Timur</p>
+                <p>IG : Khansaadiar</p>
+                <p>MBTI : ENFJ-A</p>
+                <p>HOBI : masak</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardb">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1mUB9-QQMpLQ8FSVZZ-LH04Pj8GC0uQfo" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Zidny Ilman Nafi'an</p>
+          </div>
+        </div>
+        <div class="popup" id="popup66" onclick="closePopup66()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1mUB9-QQMpLQ8FSVZZ-LH04Pj8GC0uQfo" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Zidny Ilman Nafi'an</h2>
+              <div class="card-content">
+                <p>NRP: 5027221072</p>
+                <p>Tanggal Lahir: 2/2/2004</p>
+                <p>Asal : Subang, Jawa Barat</p>
+                <p>IG : jidniin</p>
+                <p>MBTI : INFJ-A</p>
+                <p>HOBI : Pulkam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardb">
+        <div class="card">
+          <img src="http://drive.google.com/uc?export=view&id=1A1EQYHVl_tu3x3Vwx_21212hY9aKDs72" alt=""
+            " />
+          <div class="cardtxt">
+            <p>Almendo Jekson Darwin N. K.</p>
+          </div>
+        </div>
+        <div class="popup" id="popup67" onclick="closePopup67()">
+          <div class="popup-content">
+            <!-- <span class="close-button" onclick="closePopup()">&times;</span> -->
+            <img src="http://drive.google.com/uc?export=view&id=1A1EQYHVl_tu3x3Vwx_21212hY9aKDs72" alt="Foto Profil"
+              style="width: 100%;" />
+            <div class="description">
+              <h2 class="pop-name">Almendo Jekson Darwin Naftali Kambu</h2>
+              <div class="card-content">
+                <p>NRP: 5027221073</p>
+                <p>Tanggal Lahir: 9/6/2003</p>
+                <p>Asal : Serui, Papua </p>
+                <p>IG : almendokambu_9</p>
+                <p>MBTI : </p>
+                <p>HOBI : Basket</p>
+              </div>
+            </div>
+            >>>>>>> 01bd7d83463e6728f9c948b5488ca04fbeed5a24
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
   </section>
-
   <footer>
     <div class="left">
       <span>Follow us</span>
@@ -3749,7 +1977,7 @@
       <p>&copy; ITS Information Technology | Since 2021 | est. 2022</p>
     </div>
   </footer>
-  <script src="../js/main.js"></script>
+  <!-- <script src="../js/main.js"></script> -->
   <script src="../js/member.js"></script>
 </body>
 
