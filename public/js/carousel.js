@@ -1,7 +1,9 @@
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         items: 3,
-        dots: false,
+        dots: true,
+        loop: true,
+        mergeFit : true,
         autoplay: true,
         autoplayTimeout: 3000,
         responsive: {
