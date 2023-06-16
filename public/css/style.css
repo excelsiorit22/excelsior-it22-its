@@ -209,13 +209,14 @@ a.btn-learn-more:hover {
 }
 
 #profile .our-profile-photos img:nth-child(1) {
-  right: -50px;
+  right: -40px;
+  bottom: 20px;
   z-index: 1;
 }
 
 #profile .our-profile-photos img:nth-child(2) {
   bottom: -160px;
-  left: -70px;
+  left: -40px;
 }
 
 /* PRINTF RESPPONSIVE*/
